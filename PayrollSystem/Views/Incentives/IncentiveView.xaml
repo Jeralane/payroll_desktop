@@ -1,0 +1,101 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.Incentives.IncentiveView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:Incentives="clr-namespace:PayrollSystem.Views.Incentives"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Incentive Details"
+                  FontFamily="Segoe UI"
+                  Icon="/PayrollSystem;component/Images/gift.png"
+                  ResizeMode="NoResize"
+                  SizeToContent="WidthAndHeight"
+                  WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <Incentives:IncentiveViewModel />
+    </Window.DataContext>
+    <Grid Width="460" Background="{DynamicResource IncentiveViewColor}" Height="357">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data"
+                    Grid.Row="0"
+                    Margin="16,16,16,32">
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Detachment" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtDetachmentName" Text="{Binding Detachment.Name}" />
+                <Button x:Name="btnSearchDetachment" Grid.Column="2">
+                    <Image Margin="3" Source="/PayrollSystem;component/Images/search.png" />
+                </Button>
+            </Grid>
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Employee" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtEmployeeName">
+                    <TextBox.Text>
+                        <MultiBinding StringFormat="{}{0}, {1} {2}">
+                            <Binding Path="Employee.LastName" />
+                            <Binding Path="Employee.FirstName" />
+                            <Binding Path="Employee.MiddleName" />
+                        </MultiBinding>
+                    </TextBox.Text>
+                </TextBox>
+                <Button x:Name="btnSearchEmployee" Grid.Column="2">
+                    <Image Margin="3" Source="/PayrollSystem;component/Images/search.png" />
+                </Button>
+            </Grid>
+
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Start Payroll Period" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtStartPayrollPeriod" Text="{Binding StartPayrollPeriod.Description}" />
+                <Button x:Name="btnSearchPayrollPeriod" Grid.Column="2">
+                    <Image Margin="3" Source="/PayrollSystem;component/Images/search.png" />
+                </Button>
+            </Grid>
+
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Monthly Incentive Amount" />
+            <TextBox x:Name="txtEmployerShare" Text="{Binding Incentive.MonthlyIncentiveAmount, Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Remarks" />
+            <TextBox x:Name="txtRemarks"
+                     Height="52"
+                     AcceptsReturn="True"
+                     MaxLength="255"
+                     Text="{Binding Incentive.Remarks}"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto" />
+        </StackPanel>
+        <Border Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="#1E000000" />
+            </Border.Background>
+            <StackPanel x:Name="Action"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

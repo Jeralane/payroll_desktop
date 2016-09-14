@@ -1,0 +1,116 @@
+﻿<Window x:Class="PayrollSystem.Views.PayrollPeriods.PayrollPeriodsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        Title="Payroll Period List"
+        Icon="/PayrollSystem;component/Images/tear_off_calendar.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource PayrollPeriodsListColor}"
+          Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8">
+            <Grid x:Name="Buttons"
+                  Height="26"
+                  DockPanel.Dock="Bottom">
+                <Button x:Name="btnAdd"
+                        Width="80"
+                        HorizontalAlignment="Left"
+                        Content="Add" />
+                <Button x:Name="btnEdit"
+                        Width="80"
+                        Margin="84,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Edit" />
+                <Button x:Name="btnDelete"
+                        Width="80"
+                        Margin="168,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Delete" />
+            </Grid>
+            <Grid x:Name="SearchPanel"
+                  DockPanel.Dock="Top">
+
+                <l:SearchTextBox x:Name="txtFilterByKeyword"
+                                 VerticalContentAlignment="Center"
+                                 LabelText="Search"
+                                 SearchMode="Delayed" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+                      Margin="0,2,0,6"
+                      AutoGenerateColumns="False"
+                      Background="#E5FFFFFF"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="WhiteSmoke"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      VerticalGridLinesBrush="WhiteSmoke">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Id}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="#" />
+
+                    <DataGridTextColumn Width="200"
+                                        Binding="{Binding description}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Description" />
+
+                    <DataGridTextColumn Width="70"
+                                        Binding="{Binding from_date,
+                                                          StringFormat=\{0:d\}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="From" />
+
+                    <DataGridTextColumn Width="70"
+                                        Binding="{Binding to_date,
+                                                          StringFormat=\{0:d\}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="To" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding this_month,
+                                                          Converter={StaticResource MonthConverter}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Month" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding this_year}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Year" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding period_id,
+                                                          Converter={StaticResource PeriodIdConverter}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Cutoff" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding working_days}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Days" />
+
+                    <DataGridCheckBoxColumn Width="Auto"
+                                            Binding="{Binding is_posted}"
+                                            Header="Posted">
+                        <DataGridCheckBoxColumn.ElementStyle>
+                            <Style BasedOn="{StaticResource {x:Type CheckBox}}" TargetType="{x:Type CheckBox}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridCheckBoxColumn.ElementStyle>
+                    </DataGridCheckBoxColumn>
+
+                    <DataGridTextColumn Width="200"
+                                        Binding="{Binding Remarks}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Remarks" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

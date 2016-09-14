@@ -1,0 +1,8 @@
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\bin\Debug\ProjectTester.exe
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\bin\Debug\ProjectTester.pdb
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\bin\Debug\DatabaseLibrary.dll
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\bin\Debug\MySql.Data.dll
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\bin\Debug\DatabaseLibrary.pdb
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\obj\x86\Debug\ProjectTester.csprojResolveAssemblyReference.cache
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\obj\x86\Debug\ProjectTester.exe
+F:\Projects\payroll_system\OrionTaskForce\payroll_system\ProjectTester\obj\x86\Debug\ProjectTester.pdb

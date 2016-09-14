@@ -1,0 +1,246 @@
+﻿<Window x:Class="PayrollSystem.Views.FixedDeductions.FixedDeductionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:payroll="clr-namespace:PayrollSystem.Models"
+        Title="Fixed Deductions"
+        FontFamily="Segoe UI"
+        Icon="/PayrollSystem;component/Images/cut.png"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.DataContext>
+        <payroll:FixedDeduction />
+    </Window.DataContext>
+    <Grid Width="720" Background="{DynamicResource FixedDeductionViewColor}" Height="444">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" Margin="16,16,16,32">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Name="r00" Height="Auto" />
+                    <RowDefinition Name="r01" Height="Auto" />
+                    <RowDefinition Name="r02" Height="12" />
+                    <RowDefinition Name="r03" Height="Auto" />
+                    <RowDefinition Name="r04" Height="Auto" />
+                    <RowDefinition Name="r05" Height="Auto" />
+                    <RowDefinition Name="r06" Height="Auto" />
+                    <RowDefinition Name="r07" Height="12" />
+                    <RowDefinition Name="r08" Height="Auto" />
+                    <RowDefinition Name="r09" Height="Auto" />
+                    <RowDefinition Name="r10" Height="Auto" />
+                    <RowDefinition Name="r11" Height="12" />
+                    <RowDefinition Name="r12" Height="Auto" />
+                    <RowDefinition Name="r13" Height="Auto" />
+                    <RowDefinition Name="r14" Height="12" />
+                    <RowDefinition Name="r15" Height="Auto" />
+                    <RowDefinition Name="r16" Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="16" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="CashBondDeductions"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Cash Bond" />
+                <TextBlock Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Minimum for Collection" />
+                <TextBox Grid.Row="1"
+                         Grid.Column="2"
+                         Text="{Binding Converter={StaticResource DecimalConverter},
+                                        Path=CashBondBasicMin,
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock Grid.Column="4"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Amount" />
+                <TextBox Grid.Row="1"
+                         Grid.Column="4"
+                         Text="{Binding Converter={StaticResource DecimalConverter},
+                                        Path=CashBondAmount,
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock x:Name="PagibigDeductions"
+                           Grid.Row="3"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Pagibig" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="5"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Payroll Period for Collection" />
+                <ComboBox x:Name="cboPeriodId"
+                          Grid.Row="4"
+                          Grid.Column="2"
+                          Grid.ColumnSpan="5"
+                          Background="White"
+                          SelectedIndex="{Binding PagibigPeriodId}">
+                    <ComboBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                    </ComboBox.BorderBrush>
+                    <ComboBoxItem Content="" />
+                    <ComboBoxItem Margin="2" Content="1st Cutoff (1-15)" />
+                    <ComboBoxItem Margin="2" Content="2nd Cutoff (16-30)" />
+                    <ComboBoxItem Margin="2" Content="All Cutoffs" />
+                </ComboBox>
+                <TextBlock Grid.Row="5"
+                           Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Minimum fo Collection" />
+                <TextBox Grid.Row="6"
+                         Grid.Column="2"
+                         Text="{Binding Path=PagibigBasicMin,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock Grid.Row="5"
+                           Grid.Column="4"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Employee Share" />
+                <TextBox Grid.Row="6"
+                         Grid.Column="4"
+                         Text="{Binding PagibigContributionEmployee,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock Grid.Row="5"
+                           Grid.Column="6"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Employer Share" />
+                <TextBox Grid.Row="6"
+                         Grid.Column="6"
+                         Text="{Binding PagibigContributionEmployer,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock x:Name="TaxDeductions"
+                           Grid.Row="8"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Tax" />
+                <TextBlock Grid.Row="8"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="5"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Payroll Period for Collection" />
+                <ComboBox x:Name="cboTaxPeriodId"
+                          Grid.Row="9"
+                          Grid.Column="2"
+                          Grid.ColumnSpan="5"
+                          Background="White"
+                          SelectedIndex="{Binding WithholdingTaxPeriodId}">
+                    <ComboBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                    </ComboBox.BorderBrush>
+                    <ComboBoxItem Content="" />
+                    <ComboBoxItem Margin="2" Content="1st Cutoff (1-15)" />
+                    <ComboBoxItem Margin="2" Content="2nd Cutoff (16-30)" />
+                    <ComboBoxItem Margin="2" Content="All Cutoffs" />
+                </ComboBox>
+                <TextBlock Grid.Row="8"
+                           Grid.Column="8"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Minimum for Collection" />
+                <TextBox Grid.Row="9"
+                         Grid.Column="8"
+                         Text="{Binding WithholdingTaxBasicMin,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock x:Name="PhilhealthDeductions"
+                           Grid.Row="12"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Philhealth" />
+                <TextBlock Grid.Row="12"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="5"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Payroll Period for Collection" />
+                <ComboBox x:Name="cboPhilhealthPeriodId"
+                          Grid.Row="13"
+                          Grid.Column="2"
+                          Grid.ColumnSpan="5"
+                          Background="White"
+                          SelectedIndex="{Binding PhilhealthPeriodId}">
+                    <ComboBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                    </ComboBox.BorderBrush>
+                    <ComboBoxItem Content="" />
+                    <ComboBoxItem Margin="2" Content="1st Cutoff (1-15)" />
+                    <ComboBoxItem Margin="2" Content="2nd Cutoff (16-30)" />
+                    <ComboBoxItem Margin="2" Content="All Cutoffs" />
+                </ComboBox>
+                <TextBlock Grid.Row="12"
+                           Grid.Column="8"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Minimum for Collection" />
+                <TextBox Grid.Row="13"
+                         Grid.Column="8"
+                         Margin="0,0.97,0,0"
+                         VerticalAlignment="Top"
+                         Text="{Binding PhilhealthBasicMin,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+                <TextBlock x:Name="SocialSecurityDeductions"
+                           Grid.Row="15"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="SSS" />
+                <TextBlock Grid.Row="15"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="5"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Payroll Period for Collection" />
+                <ComboBox x:Name="cboSssPeriodId"
+                          Grid.Row="16"
+                          Grid.Column="2"
+                          Grid.ColumnSpan="5"
+                          Background="White"
+                          SelectedIndex="{Binding SssPeriodId}">
+                    <ComboBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                    </ComboBox.BorderBrush>
+                    <ComboBoxItem Content="" />
+                    <ComboBoxItem Margin="2" Content="1st Cutoff (1-15)" />
+                    <ComboBoxItem Margin="2" Content="2nd Cutoff (16-30)" />
+                    <ComboBoxItem Margin="2" Content="All Cutoffs" />
+                </ComboBox>
+                <TextBlock Grid.Row="15"
+                           Grid.Column="8"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Minimum for Collection" />
+                <TextBox Grid.Row="16"
+                         Grid.Column="8"
+                         Text="{Binding SssBasicMin,
+                                        Converter={StaticResource DecimalConverter},
+                                        StringFormat=\{0:N\}}" />
+            </Grid>
+        </StackPanel>
+        <Border Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="#1E000000" />
+            </Border.Background>
+        	<StackPanel x:Name="Action"
+        		HorizontalAlignment="Right"
+        		Orientation="Horizontal" Margin="8">
+        		<Button x:Name="btnSave"
+        			Width="75"
+        			Margin="0,0,4,0"
+        			Content="Save" />
+        		<Button x:Name="btnCancel"
+        			Width="75"
+        			Content="Cancel" />
+        	</StackPanel>
+        </Border>
+    </Grid>
+</Window>

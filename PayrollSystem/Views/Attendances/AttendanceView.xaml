@@ -1,0 +1,125 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.Attendances.AttendanceView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:Attendances="clr-namespace:PayrollSystem.Views.Attendances"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Attendance Details"
+                  FontFamily="Segoe UI"
+                  Icon="/PayrollSystem;component/Images/add_user.png"
+                  ResizeMode="NoResize"
+                  SizeToContent="WidthAndHeight"
+                  WindowStartupLocation="CenterScreen"
+                  mc:Ignorable="d">
+    <Views:BaseWindow.DataContext>
+        <Attendances:AttendanceViewModel />
+    </Views:BaseWindow.DataContext>
+    <Grid Width="460"
+          Height="573"
+          Background="{DynamicResource AttendanceViewColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" Margin="16,16,16,32">
+            <StackPanel x:Name="DetachmentPanel"
+                        Margin="0,0,0,2"
+                        Orientation="Vertical">
+                <TextBlock x:Name="tbkDetachmentName"
+                           Style="{DynamicResource ModuleTitleLight}"
+                           Text="{Binding Path=Detachment.Name}" />
+                <TextBlock x:Name="tbkDetachmentAddress"
+                           Margin="0"
+                           Style="{DynamicResource ModuleDescriptionLight}"
+                           Text="{Binding Path=Detachment.Address}" />
+            </StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{DynamicResource AttributeLabelLight}"
+                           Text="Employee"
+                           d:LayoutOverrides="Height" />
+                <TextBox x:Name="txtEmployeeName" Grid.Row="1">
+                    <TextBox.Text>
+                        <MultiBinding StringFormat="{}{0}, {1} {2}">
+                            <Binding Path="Employee.LastName" />
+                            <Binding Path="Employee.FirstName" />
+                            <Binding Path="Employee.MiddleName" />
+                        </MultiBinding>
+                    </TextBox.Text>
+                </TextBox>
+                <Button x:Name="btnSearchEmployee"
+                        Grid.Row="1"
+                        Grid.Column="2">
+                    <Image Margin="3" Source="/PayrollSystem;component/Images/search.png" />
+                </Button>
+            </Grid>
+            <TextBlock Grid.Row="13"
+                       Style="{DynamicResource AttributeLabelLight}"
+                       Text="Work Days" />
+            <TextBox x:Name="txtWorkDays"
+                     Grid.Row="14"
+                     Text="{Binding Payroll.Days,
+                                    Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Grid.Row="13"
+                       Grid.Column="2"
+                       Style="{DynamicResource AttributeLabelLight}"
+                       Text="Total Hours" />
+            <TextBox x:Name="txtTotalHours"
+                     Grid.Row="14"
+                     Grid.Column="2"
+                     Text="{Binding Payroll.Hours,
+                                    Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Grid.Row="13"
+                       Grid.Column="4"
+                       Style="{DynamicResource AttributeLabelLight}"
+                       Text="Overtime (Hours)" />
+            <TextBox x:Name="txtOvertime"
+                     Grid.Row="14"
+                     Grid.Column="4"
+                     Text="{Binding Payroll.OvertimeHours,
+                                    Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Grid.Row="13"
+                       Grid.Column="6"
+                       Style="{DynamicResource AttributeLabelLight}"
+                       Text="Night Differential (Hours)" />
+            <TextBox x:Name="txtNightDifferential"
+                     Grid.Row="14"
+                     Grid.Column="6"
+                     Text="{Binding Payroll.NightDifferentialHours,
+                                    Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Legal Holidays" />
+            <TextBox Text="{Binding Payroll.LegalHolidays, Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Legal Holidays Overtime (Hours)" />
+            <TextBox Text="{Binding Payroll.LegalHolidayOvertimeHours, Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Special Holidays" />
+            <TextBox Text="{Binding Payroll.SpecialHolidays, Converter={StaticResource DecimalConverter}}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Special Holidays Overtime (Hours)" />
+            <TextBox Text="{Binding Payroll.SpecialHolidaysOvertimeHours, Converter={StaticResource DecimalConverter}}" />
+        </StackPanel>
+        <Border Grid.Row="1" Background="#1E000000">
+            <StackPanel x:Name="Action"
+                        Height="24"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

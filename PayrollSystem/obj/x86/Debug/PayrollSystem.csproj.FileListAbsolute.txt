@@ -1,0 +1,720 @@
+G:\Orion\PayrollSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\Orion\PayrollSystem\obj\x86\Debug\MainWindow.baml
+G:\Orion\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+G:\Orion\PayrollSystem\obj\x86\Debug\App.g.cs
+G:\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+G:\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+G:\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+G:\Orion\PayrollSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\Orion\PayrollSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\Orion\PayrollSystem\bin\Debug\PayrollSystem.exe
+G:\Orion\PayrollSystem\bin\Debug\PayrollSystem.pdb
+G:\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+G:\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\bin\Debug\PayrollSystem.exe
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\bin\Debug\PayrollSystem.pdb
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\MainWindow.baml
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\App.g.cs
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\bin\Debug\ModelsLibrary.dll
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\bin\Debug\ModelsLibrary.pdb
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\bin\Debug\mysql.data.dll
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+D:\Jess\Projects\DesktopApps\Orion Project\Orion\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+G:\Source Code\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+G:\Source Code\Orion Project\Orion\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+D:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+D:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+D:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+D:\Projects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+D:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+D:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\PayrollSystem.exe
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\PayrollSystem.pdb
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\MySql.Data.dll
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Tester.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\MainWindow.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Tester.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\App.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\App.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+H:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\PayrollSystem.exe
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\PayrollSystem.pdb
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\MySql.Data.dll
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Tester.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\MainWindow.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Tester.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\App.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\App.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+D:\Projects\payroll_system 2014-04-10\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+G:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+G:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+G:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+G:\Projects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+G:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Copy of App.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView2.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Copy of App.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView2.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+G:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+H:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+H:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+H:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+H:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\Generic.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+I:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+I:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+I:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+I:\Projects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+I:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\ColoursDictionary.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\Generic.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+I:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\ColoursDictionary.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.baml
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.g.cs
+H:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+F:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+F:\Projects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+F:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+F:\Projects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+F:\Projects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\ColoursDictionary.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\Generic.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+F:\Projects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.exe
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.pdb
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.pdb
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.dll
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.dll
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\DatabaseLibrary.pdb
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csprojResolveAssemblyReference.cache
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\ColoursDictionary.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\MainWindow.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\MainView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\ChangePasswordView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\LoginView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\SwicthDatabaseView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\App.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.cache
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem_MarkupCompile.lref
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\App.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Tester.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Themes\Generic.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesPerDetachmentView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendancesList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Attendances\AttendanceView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Billings\BillingView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvancesList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\CashAdvances\CashAdvanceView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentsPerDetachmentView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Assignments\AssignmentView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\AttendancesPerDetachmentView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Payrolls\PayrollView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Utilities\PostCurrentPayrollPeriodView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Preferences\PreferenceView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoansList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssLoans\SssLoanView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoansList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PagibigLoans\PagibigLoanView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\SssContributions\SssContributionView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\SearchModule\SearchWindow.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\FixedDeductions\FixedDeductionView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeesList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employees\EmployeeView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployersList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Employers\EmployerView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Helpers\AddressView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UsersList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Users\UserView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PayrollPeriods\PayrollPeriodView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusesList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Detachments\DetachmentView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\EmployeeStatuses\EmployeeStatusView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\PhilhealthContributions\PhilhealthContributionView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentivesList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\Incentives\IncentiveView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupsList.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\Views\TaxGroups\TaxGroupView.baml
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.g.resources
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.Properties.Resources.resources
+F:\SoftwareProjects\payroll_system\PayrollSystem\obj\x86\Debug\PayrollSystem.csproj.GenerateResource.Cache
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\PayrollSystem.exe.config
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\EntityFramework.dll
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\EntityFramework.SqlServer.dll
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\MySql.Data.Entity.EF6.dll
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\EntityFramework.xml
+F:\SoftwareProjects\payroll_system\PayrollSystem\bin\Debug\EntityFramework.SqlServer.xml

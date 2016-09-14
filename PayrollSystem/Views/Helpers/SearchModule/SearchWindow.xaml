@@ -1,0 +1,87 @@
+﻿<Window x:Class="PayrollSystem.Views.Helpers.SearchModule.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        xmlns:local="clr-namespace:PayrollSystem.Views.Helpers.SearchModule"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Search"
+        FontFamily="Segoe UI"
+        Icon="/PayrollSystem;component/Images/search.png"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+    <Window.Resources>
+        <local:SearchItemViewModel x:Key="SearchItemViewModelDataSource" d:IsDataSource="True" />
+        <Style x:Key="ButtonElementStyle" TargetType="{x:Type StackPanel}">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Mode="OneWay" Source="{StaticResource SearchItemViewModelDataSource}" />
+    </Window.DataContext>
+    <Grid Width="360"
+          Height="520"
+          Background="{DynamicResource SearchWindowColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Background="#1E000000">
+            <StackPanel Margin="8" Orientation="Horizontal">
+                <StackPanel Margin="4,4,4,4" Style="{DynamicResource ButtonElementStyle}">
+                    <StackPanel Width="26" Height="26">
+                        <Image Source="/PayrollSystem;component/Images/search_light.png" />
+                    </StackPanel>
+                    <StackPanel Margin="4,0,0,0" Orientation="Vertical">
+                        <TextBlock Foreground="#BFFFFFFF"
+                                   Style="{DynamicResource ModuleTitleLight}"
+                                   Text="Search Module" />
+                        <TextBlock Style="{DynamicResource ModuleDescriptionLight}" Text="Double-click an item or select and press F12." />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1"
+              Height="26"
+              Margin="8,8,8,0"
+              VerticalAlignment="Top">
+            <l:SearchTextBox x:Name="txtFilterByKeyword" LabelText="Search" />
+        </Grid>
+        <DataGrid x:Name="grdList"
+                  Grid.Row="2"
+                  Margin="8,4,8,8"
+                  AutoGenerateColumns="False"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="WhiteSmoke"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding SearchItems}"
+                  SelectedItem="{Binding SelectedItem}"
+                  SelectionMode="Single"
+                  VerticalGridLinesBrush="WhiteSmoke">
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <EventSetter Event="MouseDoubleClick" Handler="OnDataGridRowMouseDoubleClick" />
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </DataGrid.BorderBrush>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="Auto"
+                                    Binding="{Binding ItemId}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="Id" />
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding ItemName}"
+                                    ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                    Header="Keyword" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

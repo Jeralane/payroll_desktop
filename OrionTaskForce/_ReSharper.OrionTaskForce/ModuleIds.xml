@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="FEE72EC6-0270-478E-9AC6-E34CE06BE3DB" ModuleId="DatabaseLibrary" />
+  <Module PersistentId="5C886A93-B88F-42D2-96B6-1B28C241041A" ModuleId="PayrollSystem" />
+  <Module PersistentId="4E8DA4AE-ED54-4329-BBEC-E9C401622A32" ModuleId="ProjectTester" />
+</Modules>

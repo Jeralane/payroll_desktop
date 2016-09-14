@@ -1,0 +1,140 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  <SolidColorBrush x:Key="Air Force Blue">#5d8aa8</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="EmployeesListColor">#5d8aa8</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Alizarin Crimson">#e32636</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="EmployeeViewColor">#e32636</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Amaranth">#e52b50</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="DetachmentsListColor">#e52b50</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Amethyst">#9966cc</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="DetachmentViewColor">#9966cc</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Android Green">#a4c639</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="TaxGroupsListColor">#a4c639</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Antique Fuchsia">#915c83</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="TaxGroupViewColor">#915c83</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Ao">#008000</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="EmployeeStatusesListColor">#008000</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Apple Green">#8db600</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="EmployeeStatusViewColor">#8db600</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Army Green">#4b5320</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PayrollPeriodsListColor">#4b5320</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Auburn">#a52a2a</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PayrollPeriodViewColor">#a52a2a</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Awesome">#ff2052</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="UsersListColor">#ff2052</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Azure">#007fff</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="UserViewColor">#007fff</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Ball Blue">#21abcd</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="FixedDeductionViewColor">#21abcd</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Battleship Grey">#848482</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PhilhealthContributionsListColor">#848482</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bazaar">#98777b</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PhilhealthContributionViewColor">#98777b</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Bistre">#3d2b1f</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="SssContributionsListColor">#3d2b1f</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bittersweet">#fe6f5e</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="SssContributionViewColor">#fe6f5e</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Blue Green">#0d98ba</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="WithholdingTaxDeductionsListColor">#0d98ba</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bole">#79443b</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="WithholdingTaxDeductionViewColor">#79443b</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Bondi Blue">#0095b6</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="IncentivesListColor">#0095b6</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Boston University Red">#cc0000</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="IncentiveViewColor">#cc0000</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bottle Green">#006a4e</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="SearchWindowColor">#006a4e</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Boysenberry">#873260</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="CashAdvancesListColor">#873260</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Brandeis Blue">#0070ff</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="CashAdvanceViewColor">#0070ff</SolidColorBrush>
+
+
+    <!--  <SolidColorBrush x:Key="Brass">#b5a642</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PagibigLoansListColor">#b5a642</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Brick Red">#cb4154</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PagibigLoanViewColor">#cb4154</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bright Cerulean">#1dacd6</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="SssLoansListColor">#1dacd6</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bright Maroon">#c32148</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="SssLoanViewColor">#c32148</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Brilliant Rose">#ff55a3</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PreferenceViewColor">#ff55a3</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Bronze">#5d8aa8</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="BillingsListColor">#cd7f32</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Brown">#c32148</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="BillingViewColor">#a52a2a</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Burnt orange">#cc5500</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="LoginViewColor">#cd5700</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Burnt umber">#8a3324</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="ChangePasswordViewColor">#8a3324</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Byzantine">#bd33a4</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PostCurrentPayrollPeriodViewColor">#bd33a4</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Byzantium">#702963</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AssignmentsListColor">#702963</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="CG Blue">#007aa5</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AssignmentsPerDetachmentViewColor">#007aa5</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="CG Red">#e03c31</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AssignmentViewColor">#e03c31</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Cadet"> #536872</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AttendancesListColor">#536872</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Cadet Blue">#5f9ea0</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AttendancesPerDetachmentViewColor">#5f9ea0</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Cadmium green">#006b3c</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="AttendanceViewColor">#006b3c</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Cadmium orange">#ed872d</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PayrollViewColor">#ed872d</SolidColorBrush>
+
+    <!--  <SolidColorBrush x:Key="Cadmium red">#e30022</SolidColorBrush>  -->
+    <SolidColorBrush x:Key="PayrollsListColor">#e30022</SolidColorBrush>
+
+</ResourceDictionary> 

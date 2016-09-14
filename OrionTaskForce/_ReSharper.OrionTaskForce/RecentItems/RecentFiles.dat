@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PayrollPeriods/f:PayrollPeriodView.xaml" caret="0" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Utilities/f:PostCurrentPayrollPeriodView.xaml" caret="0" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Themes/f:Generic.xaml" caret="87318" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/f:MainView.xaml" caret="23337" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Assignments/f:AssignmentsList.xaml" caret="1910" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Assignments/f:AssignmentsPerDetachmentView.xaml" caret="2932" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Attendances/f:AttendancesList.xaml" caret="1957" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Attendances/f:AttendancesPerDetachmentView.xaml" caret="2968" fromTop="13" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:CashAdvances/f:CashAdvancesList.xaml" caret="1415" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Detachments/f:DetachmentsList.xaml" caret="661" fromTop="13" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Employees/f:EmployeesList.xaml" caret="1396" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:EmployeeStatuses/f:EmployeeStatusesList.xaml" caret="1428" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Incentives/f:IncentivesList.xaml" caret="1397" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PagibigLoans/f:PagibigLoansList.xaml" caret="1409" fromTop="13" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PayrollPeriods/f:PayrollPeriodsList.xaml" caret="1426" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PhilhealthContributions/f:PhilhealthContributionsList.xaml" caret="1457" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:SssContributions/f:SssContributionsList.xaml" caret="1422" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:SssLoans/f:SssLoansList.xaml" caret="1391" fromTop="15" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:TaxGroups/f:TaxGroupsList.xaml" caret="1412" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Users/f:UsersList.xaml" caret="1524" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/f:MainView.xaml.cs" caret="2652" fromTop="42" />
+    <File id="FEE72EC6-0270-478E-9AC6-E34CE06BE3DB/f:DatabaseHelper.cs" caret="4251" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:AttendancesPerDetachmentView.xaml" caret="2956" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Themes/f:ColoursDictionary.xaml" caret="6839" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollsList.xaml" caret="12875" fromTop="11" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollsList.xaml.cs" caret="719" fromTop="14" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:AttendancesPerDetachmentView.xaml.cs" caret="5086" fromTop="28" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollView.xaml.cs" caret="911" fromTop="23" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollViewModel.cs" caret="902" fromTop="31" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollView.xaml" caret="1" fromTop="0" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/f:App.xaml" caret="920" fromTop="18" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:WithholdingTaxDeductions/f:WithholdingTaxDeductionsList.xaml" caret="438" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Incentives/f:IncentivesList.xaml" caret="1776" fromTop="27" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Utilities/f:LoginView.xaml" caret="3042" fromTop="22" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:SssLoans/f:SssLoansList.xaml" caret="441" fromTop="8" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Themes/f:Generic.xaml" caret="87336" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Attendances/f:AttendancesList.xaml" caret="206" fromTop="0" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:AttendancesPerDetachmentView.xaml" caret="546" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/f:MainView.xaml" caret="23337" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/f:MainView.xaml.cs" caret="2652" fromTop="42" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Assignments/f:AssignmentsList.xaml" caret="1913" fromTop="8" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Assignments/f:AssignmentsPerDetachmentView.xaml" caret="2963" fromTop="9" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Attendances/f:AttendancesPerDetachmentView.xaml" caret="2999" fromTop="15" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:CashAdvances/f:CashAdvancesList.xaml" caret="1418" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Detachments/f:DetachmentsList.xaml" caret="663" fromTop="14" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Employees/f:EmployeesList.xaml" caret="1398" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:EmployeeStatuses/f:EmployeeStatusesList.xaml" caret="1430" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PagibigLoans/f:PagibigLoansList.xaml" caret="1411" fromTop="14" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PayrollPeriods/f:PayrollPeriodsList.xaml" caret="1428" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:PhilhealthContributions/f:PhilhealthContributionsList.xaml" caret="1459" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:SssContributions/f:SssContributionsList.xaml" caret="1424" fromTop="25" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Users/f:UsersList.xaml" caret="1527" fromTop="25" />
+    <File id="FEE72EC6-0270-478E-9AC6-E34CE06BE3DB/f:DatabaseHelper.cs" caret="4251" fromTop="7" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollsList.xaml" caret="12875" fromTop="14" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Themes/f:ColoursDictionary.xaml" caret="6839" fromTop="24" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:AttendancesPerDetachmentView.xaml.cs" caret="5086" fromTop="28" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollsList.xaml.cs" caret="719" fromTop="14" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollView.xaml.cs" caret="909" fromTop="22" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollViewModel.cs" caret="902" fromTop="31" />
+    <File id="5C886A93-B88F-42D2-96B6-1B28C241041A/d:Views/d:Payrolls/f:PayrollView.xaml" caret="1" fromTop="0" />
+  </RecentEdits>
+</RecentFiles>

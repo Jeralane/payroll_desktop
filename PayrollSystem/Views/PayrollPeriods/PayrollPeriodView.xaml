@@ -1,0 +1,67 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.PayrollPeriods.PayrollPeriodView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:payroll="clr-namespace:PayrollSystem.Models"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Payroll Period Details"
+                  FontFamily="Segoe UI"
+                  Icon="/PayrollSystem;component/Images/tear_off_calendar.png"
+                  ResizeMode="NoResize"
+                  SizeToContent="WidthAndHeight"
+                  Topmost="True"
+                  WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <payroll:PayrollPeriod />
+    </Window.DataContext>
+    <Grid Width="300" Background="{DynamicResource PayrollPeriodViewColor}" Height="315">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" Margin="16">
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Payroll Period Name" />
+            <TextBox x:Name="txtName" Text="{Binding Description}" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Cutoff" />
+            <ComboBox x:Name="cboPeriodId"
+                      Background="White"
+                      SelectedIndex="{Binding PeriodId}">
+                <ComboBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </ComboBox.BorderBrush>
+                <ComboBoxItem Content="" />
+                <ComboBoxItem Margin="0,2" Content="1st Cutoff (1-15)" />
+                <ComboBoxItem Margin="2,0,0,2" Content="2nd Cutoff (16-30)" />
+                <ComboBoxItem Margin="2,0,0,2" Content="All Cutoffs" />
+            </ComboBox>
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="From" />
+            <DatePicker x:Name="dtpFromDate" SelectedDate="{Binding FromDate, Converter={StaticResource DatePickerConverter1}, StringFormat=\{0:d\}}" />
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="To" />
+            <DatePicker x:Name="dtpToDate" SelectedDate="{Binding ToDate, Converter={StaticResource DatePickerConverter1}, StringFormat=\{0:d\}}" />
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Remarks" />
+            <TextBox x:Name="txtRemarks"
+                     AcceptsReturn="True"
+                     Text="{Binding Remarks}" />
+
+        </StackPanel>
+        <Border Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="#1E000000" />
+            </Border.Background>
+            <StackPanel x:Name="Action"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

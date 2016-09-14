@@ -1,0 +1,74 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        xmlns:Models="clr-namespace:PayrollSystem.Models" x:Class="PayrollSystem.Views.Users.UsersList"
+        Title="Users List"
+        Icon="/PayrollSystem;component/Images/reviewer.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+		Background="{DynamicResource UsersListColor}"
+		Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8">
+            <Grid x:Name="Buttons" DockPanel.Dock="Bottom">
+                <Button x:Name="btnAdd"
+					Width="80"
+					HorizontalAlignment="Left"
+					Content="Add" />
+                <Button x:Name="btnEdit"
+					Width="80"
+					Margin="84,0,0,0"
+					HorizontalAlignment="Left"
+					Content="Edit" />
+                <Button x:Name="btnDelete"
+					Width="80"
+					Margin="168,0,0,0"
+					HorizontalAlignment="Left"
+					Content="Delete" />
+                <Button x:Name="btnResetPassword"
+					Width="100"
+					HorizontalAlignment="Right"
+					Content="Reset Password" />
+            </Grid>
+            <Grid x:Name="SearchPanel"
+				DockPanel.Dock="Top">
+
+                <l:SearchTextBox x:Name="txtFilterByKeyword"
+					VerticalContentAlignment="Center"
+					LabelText="Search"
+					SearchMode="Delayed" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+				Margin="0,2,0,6"
+				AutoGenerateColumns="False"
+				Background="#E5FFFFFF"
+				HeadersVisibility="Column"
+				HorizontalGridLinesBrush="WhiteSmoke"
+				IsReadOnly="True"
+				SelectionMode="Single"
+				VerticalGridLinesBrush="WhiteSmoke">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding ID}"
+						ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+						Header="#" />
+                    <DataGridTextColumn Width="*"
+						Binding="{Binding Name}"
+						ElementStyle="{DynamicResource StringDataGridTextColumn}"
+						Header="User Name" />
+                    <DataGridTextColumn Width="*"
+						Binding="{Binding AccessLevel}"
+						ElementStyle="{DynamicResource StringDataGridTextColumn}"
+						Header="Access Level" />
+                </DataGrid.Columns>
+                <DataGrid.DataContext>
+                    <Models:User/>
+                </DataGrid.DataContext>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

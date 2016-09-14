@@ -1,0 +1,218 @@
+﻿<Window x:Class="PayrollSystem.Views.Payrolls.PayrollsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        Title="Payrolls List"
+        Icon="/PayrollSystem;component/Images/check_book.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource PayrollsListColor}"
+          Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8" LastChildFill="True">
+            <Grid x:Name="FormFooter"
+                  Height="26"
+                  VerticalAlignment="Center"
+                  DockPanel.Dock="Bottom">
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Button x:Name="btnComputePayroll"
+                            Width="100"
+                            Height="26"
+                            Content="Compute Payroll"
+                            FontWeight="Bold" />
+                    <Button x:Name="btnEditSelected"
+                            Width="100"
+                            Height="26"
+                            Margin="2,0,0,0"
+                            Content="Edit Selected" />
+                    <Button x:Name="btnPreviewPayroll"
+                            Width="100"
+                            Height="26"
+                            Margin="2,0,0,0"
+                            Content="Preview Payroll" />
+                    <Button x:Name="btnPreviewPayslip"
+                            Width="100"
+                            Height="26"
+                            Margin="2,0,0,0"
+                            Content="Preview Payslip" />
+                </StackPanel>
+                <StackPanel x:Name="CurrentPayrollPeriodPanel"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock Margin="0,0,8,0"
+                               Style="{DynamicResource ModuleDescriptionLight}"
+                               Text="Payroll Period"
+                               TextWrapping="Wrap" />
+                    <TextBlock x:Name="tbkCurrentPayrollPeriod"
+                               Margin="0"
+                               HorizontalAlignment="Right"
+                               FontWeight="Bold"
+                               Style="{DynamicResource ModuleDescriptionLight}"
+                               Text="{Binding Description}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="SearchPanel" DockPanel.Dock="Top">
+
+                <l:SearchTextBox x:Name="txtFilterByKeyword"
+                                 VerticalContentAlignment="Center"
+                                 LabelText="Search detachment or employee"
+                                 SearchMode="Delayed" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+                      Margin="0,2,0,8"
+                      AutoGenerateColumns="False"
+                      Background="#E5FFFFFF"
+                      FrozenColumnCount="3"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="WhiteSmoke"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      VerticalGridLinesBrush="WhiteSmoke">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <EventSetter Event="MouseDoubleClick" Handler="OnDataGridRowMouseDoubleClick" />
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding row_number}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="#" />
+                    <DataGridTextColumn Width="200"
+                                        Binding="{Binding detachment_name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Detachment Name" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding last_name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Last Name" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding first_name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="First Name" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding middle_name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Middle Name" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding basic_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Basic Pay" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding overtime_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="OT Pay" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding night_differential_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="ND Pay" />
+
+                    <DataGridTextColumn Width="60"
+                                        Binding="{Binding holiday_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Holiday Pay" />
+
+                    <DataGridTextColumn Width="60"
+                                        Binding="{Binding cola_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="COLA" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding incentives,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Incentives" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding other_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Others" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding gross_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Gross Pay" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding cash_advance,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Cash Advance" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding insurance,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Insurance" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding cash_bond,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Cash Bond" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding pagibig_contribution_employee,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Pagibig Contribution" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding pagibig_loan,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Pagibig Loan" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding philhealth_contribution_employee,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Philhealth Contribution" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding sss_contribution_employee,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="SSS Contribution" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding sss_loan,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="SSS Loan" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding tax_withheld,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Tax Withheld" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding other_deductions,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Other Deductions" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding total_deductions,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Total Deductions" />
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding net_pay,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Net Pay" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

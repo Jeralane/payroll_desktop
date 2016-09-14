@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PayrollSystem.Models.Billing" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQCAAAAAAABIAAQAAAAEIQgABFAAEgCAAAIAQEAAAA=</HashCode>
+      <FileName>Models\Billing.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.CashAdvance" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCBAAAAIAAAAAAAAAgAAQgAAEAAEAAAAAAEQACAAA=</HashCode>
+      <FileName>Models\CashAdvance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.CashBond" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAAAAAAAAAAAAAAQAAAQgAAEBAEAACAAAEQACAAA=</HashCode>
+      <FileName>Models\CashBond.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.Education" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAIAACAQgAAEIAEEAQAAAAQAAAIA=</HashCode>
+      <FileName>Models\Education.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.ActionResult" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Controllers\ActionResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PayrollSystem.Models.Company" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAQgAAEAAEACAIAAAwAAAAA=</HashCode>
+      <FileName>Models\Company.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.Detachment" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAyCEKAAAIAAACAAAAAAAIQgAYEAAEACQAAAAQAAAAA=</HashCode>
+      <FileName>Models\Detachment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.Employee">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQKCAgAAAFAAAAEGABAACwgABFQBECAAAEAAQBAgAA=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.EmployeeDependent" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAQgAAEAAEAAAAAAAQACAAA=</HashCode>
+      <FileName>Models\EmployeeDependent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.Employment" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQGDAAAAAAAAAAgAAAAAAwgAAEAAEAAAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Employment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PayrollSystem.Models.License" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQCAAAAAAAAAAAAAEAAAAQgAAEAAEAhAAAAAQAAAAA=</HashCode>
+      <FileName>Models\License.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PayrollSystem.Models.IModel" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAQgAAEAAEAAAAAAAQAAAAA=</HashCode>
+      <FileName>Models\IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

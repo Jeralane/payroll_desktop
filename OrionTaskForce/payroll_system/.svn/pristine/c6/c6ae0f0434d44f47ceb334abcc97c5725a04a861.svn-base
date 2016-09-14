@@ -1,0 +1,106 @@
+﻿<Window x:Class="PayrollSystem.Views.Employers.EmployersList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:PayrollSystem.Views.Employers"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Employers List"
+        Icon="/PayrollSystem;component/Images/organization.png"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="ButtonElementStyle" TargetType="{x:Type StackPanel}">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:EmployersViewModel />
+    </Window.DataContext>
+    <Grid Width="760" Height="570">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Background="WhiteSmoke">
+            <StackPanel Margin="8" Orientation="Horizontal">
+                <StackPanel Margin="4,4,4,4" Style="{DynamicResource ButtonElementStyle}">
+                    <StackPanel Width="26" Height="26">
+                        <Image Source="/PayrollSystem;component/Images/organization.png" />
+                    </StackPanel>
+                    <StackPanel Margin="4,0,0,0" Orientation="Vertical">
+                        <TextBlock Style="{DynamicResource ModuleTitle}" Text="Employers List" />
+                        <TextBlock Style="{DynamicResource ModuleDescription}" Text="Here is a list of all Employers. To filter the grid type into the Filter by keyword textbox the Employer Name then click Refresh." />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1"
+              Height="26"
+              Margin="8,12,8,0"
+              VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Center" Text="Filter by keyword" />
+            <TextBox Name="txtFilterByKeyword"
+                     Grid.Column="1"
+                     Margin="6,0"
+                     VerticalContentAlignment="Center"
+                     Padding="2" />
+            <Button Name="btnRefresh"
+                    Grid.Column="2"
+                    Content="Refresh" />
+        </Grid>
+        <DataGrid x:Name="dataGrid1"
+                  Grid.Row="2"
+                  Margin="8"
+                  AutoGenerateColumns="False"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="WhiteSmoke"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding Collection}"
+                  SelectedItem="{Binding SelectedItem}"
+                  SelectionMode="Single"
+                  VerticalGridLinesBrush="WhiteSmoke">
+            <DataGrid.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource BorderMediumColor}"/>
+            </DataGrid.BorderBrush>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="#" />
+                <DataGridTextColumn x:Name="dataGridTextColumn"
+                                    Width="*"
+                                    Binding="{Binding Name}"
+                                    Header="Employer Name" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Branch}"
+                                    Header="Branch" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="3"
+              Height="26"
+              Margin="8,0,8,8"
+              VerticalAlignment="Bottom">
+            <Button x:Name="btnAdd"
+                    Width="80"
+                    HorizontalAlignment="Left"
+                    Content="Add" />
+            <Button x:Name="btnEdit"
+                    Width="80"
+                    Margin="84,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Edit" />
+            <Button x:Name="btnDelete"
+                    Width="80"
+                    Margin="168,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Delete" />
+        </Grid>
+    </Grid>
+</Window>

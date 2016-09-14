@@ -1,0 +1,97 @@
+﻿<Window x:Class="PayrollSystem.Views.PayrollPeriods.PayrollPeriodView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:payroll="clr-namespace:PayrollSystem.Models"
+        x:Name="Window"
+        Title="Payroll Period Details"
+        Icon="/PayrollSystem;component/Images/tear_off_calendar.png"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen" Background="{DynamicResource PayrollPeriodModuleColor}">
+    <Window.DataContext>
+        <payroll:PayrollPeriod />
+    </Window.DataContext>
+    <Grid Width="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" Margin="16">
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Payroll Period Name" />
+            <TextBox x:Name="txtName" Text="{Binding Description}" Margin="0,0,0,8" />
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Cutoff" />
+            <ComboBox x:Name="cboPeriodId"
+                      Height="24"
+                      Background="White"
+                      SelectedIndex="{Binding PeriodId}" Margin="0,0,0,8">
+            	<ComboBox.BorderBrush>
+            		<SolidColorBrush Color="{DynamicResource BorderMediumColor}"/>
+            	</ComboBox.BorderBrush>
+                <ComboBoxItem Content="" />
+                <ComboBoxItem Margin="0,2" Content="1st Cutoff (1-15)" />
+                <ComboBoxItem Margin="2,0,0,2" Content="2nd Cutoff (16-30)" />
+                <ComboBoxItem Margin="2,0,0,2" Content="All Cutoffs" />
+            </ComboBox>
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="From" />
+            <Border
+                    Background="White"
+                    BorderThickness="1"
+                    CornerRadius="2" Margin="0,0,0,8">
+            	<Border.BorderBrush>
+            		<SolidColorBrush Color="{DynamicResource BorderMediumColor}"/>
+            	</Border.BorderBrush>
+                <DatePicker x:Name="dtpFromDate"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            Padding="1"
+                            SelectedDate="{Binding FromDate,
+                                                   Converter={StaticResource DatePickerConverter1},
+                                                   StringFormat=\{0:d\}}" />
+            </Border>
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="To" />
+            <Border
+                    Background="White"
+                    BorderThickness="1"
+                    CornerRadius="2" Margin="0,0,0,8">
+            	<Border.BorderBrush>
+            		<SolidColorBrush Color="{DynamicResource BorderMediumColor}"/>
+            	</Border.BorderBrush>
+                <DatePicker x:Name="dtpToDate"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            Padding="1"
+                            SelectedDate="{Binding ToDate,
+                                                   Converter={StaticResource DatePickerConverter1},
+                                                   StringFormat=\{0:d\}}" />
+            </Border>
+
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Remarks" />
+            <TextBox x:Name="txtRemarks"
+                     Margin="0,0,0,8"
+                     AcceptsReturn="True"
+                     Text="{Binding Remarks}" />
+
+        </StackPanel>
+        <Border Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="#1E000000" />
+            </Border.Background>
+        </Border>
+        <StackPanel x:Name="Action"
+                    Grid.Row="1"
+                    Margin="8"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button x:Name="btnSave"
+                    Width="75"
+                    Margin="0,0,4,0"
+                    Content="Save" />
+            <Button x:Name="btnCancel"
+                    Width="75"
+                    Content="Cancel" />
+        </StackPanel>
+    </Grid>
+</Window>

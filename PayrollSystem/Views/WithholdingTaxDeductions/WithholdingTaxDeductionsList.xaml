@@ -1,0 +1,215 @@
+﻿<Window x:Class="PayrollSystem.Views.WithholdingTaxDeductions.WithholdingTaxDeductionsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Withholding Tax Deduction Matrix"
+        Icon="/PayrollSystem;component/Images/bir.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource WithholdingTaxDeductionsListColor}"
+          Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8">
+            <Grid x:Name="Buttons"
+                  Height="26"
+                  DockPanel.Dock="Bottom">
+                <Button x:Name="btnAdd"
+                        Width="80"
+                        HorizontalAlignment="Left"
+                        Content="Add" />
+                <Button x:Name="btnEdit"
+                        Width="80"
+                        Margin="84,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Edit" />
+                <Button x:Name="btnDelete"
+                        Width="80"
+                        Margin="168,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Delete" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+                      Width="744"
+                      Margin="0,0,0,8"
+                      AutoGenerateColumns="False"
+                      Background="#E5FFFFFF"
+                      FrozenColumnCount="3"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="WhiteSmoke"
+                      HorizontalScrollBarVisibility="Visible"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      VerticalGridLinesBrush="WhiteSmoke">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding row_number}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="#" />
+
+                    <DataGridTextColumn Width="160"
+                                        Binding="{Binding payment_type,
+                                                          Converter={StaticResource PaymentTypeConverter}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Type" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding tax_group_id}"
+                                        Header="Tax Group" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption1,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="1 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier1,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="1 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend1,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="1 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption2,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="2 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier2,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="2 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend2,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="2 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption3,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="3 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier3,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="3 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend3,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="3 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption4,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="4 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier4,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="4 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend4,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="4 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption5,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="5 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier5,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="5 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend5,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="5 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption6,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="6 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier6,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="6 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend6,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="6 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption7,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="7 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier7,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="7 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend7,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="7 Minuend" />
+
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding exemption8,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="8 Exempt" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding percent_multiplier8,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="8 Multiply" />
+
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding basic_pay_minuend8,
+                                                          StringFormat=\{0:N2\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="8 Minuend" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

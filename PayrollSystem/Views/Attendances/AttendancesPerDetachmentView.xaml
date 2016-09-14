@@ -1,0 +1,208 @@
+﻿<Window x:Class="PayrollSystem.Views.Attendances.AttendancesPerDetachmentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        Title="Attendances Per Detachment"
+        Icon="/PayrollSystem;component/Images/add_user.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource AttendancesPerDetachmentViewColor}"
+          Style="{DynamicResource RootGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="FormHeader" Background="#1E000000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".7*" />
+                <ColumnDefinition Width=".3*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1"
+                        Margin="8"
+                        Orientation="Horizontal">
+                <StackPanel x:Name="CurrentPayrollPeriodPanel"
+                            Margin="4,4,4,4"
+                            Style="{DynamicResource ButtonElementStyle}">
+                    <StackPanel Width="26" Height="26">
+                        <Image Source="/PayrollSystem;component/Images/tear_off_calendar_light.png" />
+                    </StackPanel>
+                    <StackPanel Margin="4,0,0,0" Orientation="Vertical">
+                        <TextBlock Style="{DynamicResource ModuleTitleLight}" Text="{Binding Description}" />
+                        <TextBlock Style="{DynamicResource ModuleDescriptionLight}" Text="Current Payroll Period" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="SelectedDetachmentPanel"
+                        Margin="8"
+                        Orientation="Horizontal">
+                <StackPanel Margin="4,4,4,4" Style="{DynamicResource ButtonElementStyle}">
+                    <StackPanel Width="26" Height="26">
+                        <Image x:Name="imgDetachment"
+                               Cursor="Hand"
+                               Source="/PayrollSystem;component/Images/hotel_light.png" />
+                    </StackPanel>
+                    <StackPanel Margin="4,0,0,0" Orientation="Vertical">
+                        <TextBlock Style="{DynamicResource ModuleTitleLight}" Text="{Binding Name}" />
+                        <TextBlock Style="{DynamicResource ModuleDescriptionLight}" Text="{Binding Address}" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="SearchPanel"
+              Grid.Row="1"
+              Margin="8,8,8,0"
+              VerticalAlignment="Bottom">
+
+            <l:SearchTextBox x:Name="txtFilterByKeyword"
+                             LabelText="Search employee"
+                             SearchMode="Delayed" />
+        </Grid>
+        <DataGrid x:Name="dataGrid1"
+                  Grid.Row="2"
+                  Margin="8,2,8,8"
+                  AutoGenerateColumns="False"
+                  Background="#E5FFFFFF"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="WhiteSmoke"
+                  HorizontalScrollBarVisibility="Visible"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  VerticalGridLinesBrush="WhiteSmoke">
+            <DataGrid.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </DataGrid.BorderBrush>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding row_number}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="#" />
+
+                <DataGridTextColumn Width="140"
+                                    Binding="{Binding last_name,
+                                                      StringFormat=\{0:N0\}}"
+                                    ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                    Header="Last Name" />
+
+                <DataGridTextColumn Width="140"
+                                    Binding="{Binding first_name,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                    Header="First Name" />
+
+                <DataGridTextColumn Width="140"
+                                    Binding="{Binding middle_name,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                    Header="Middle Name" />
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding days,
+                                                      StringFormat=\{0:N0\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="Days" />
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding hours,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="Hours" />
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding overtime_hours,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="OT Hrs">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Overtime" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding night_differential_hours,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="ND Hrs">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Night Differential" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding legal_holidays,
+                                                      StringFormat=\{0:N0\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="Legal Holidays">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Legal Holidays" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding legal_holiday_overtime_hours,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="LH OT Hrs">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Overtime on legal holidays" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding special_holidays,
+                                                      StringFormat=\{0:N0\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="Special Holidays">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Special Holidays" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Width="100"
+                                    Binding="{Binding special_holidays_overtime_hours,
+                                                      StringFormat=\{0:N\}}"
+                                    ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                    Header="SH OT Hrs">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ToolTip" Value="Overtime on special holidays" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid x:Name="FormFooter"
+              Grid.Row="3"
+              Height="26"
+              Margin="8,0,8,8"
+              VerticalAlignment="Bottom">
+            <Button x:Name="btnAdd"
+                    Width="80"
+                    HorizontalAlignment="Left"
+                    Content="Add" />
+            <Button x:Name="btnEdit"
+                    Width="80"
+                    Margin="84,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Edit" />
+            <Button x:Name="btnDelete"
+                    Width="80"
+                    Margin="168,0,0,0"
+                    HorizontalAlignment="Left"
+                    Content="Delete" />
+        </Grid>
+    </Grid>
+</Window>

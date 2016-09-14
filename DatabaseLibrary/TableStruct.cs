@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+
+namespace DatabaseLibrary
+{
+    internal struct TableStruct
+    {
+        public Dictionary<string, object> Fields;
+        public string Name;
+        public string RealName;
+        public KeyValuePair<string, int> Id;
+
+        public TableStruct(AbstractModel model)
+        {
+            // Fields/Columns are the class properties
+            Fields = new Dictionary<string, object>();
+
+            Id = new KeyValuePair<string, int>("Id".ToColumnName(), model.Id);
+            Type type = model.GetType();
+            PropertyInfo[] properties = type.GetProperties();
+
+            // Iterate through class properties using Reflection
+            //foreach (PropertyInfo property in properties)
+            //{
+            //    Fields.Add(property.Name.ToColumnName(), property.GetValue(model, null));
+            //}
+
+            foreach (var propertyInfo in properties)
+            {
+                var customAttributes = propertyInfo.GetCustomAttributes(typeof(ColumnNameAttribute), false);
+
+                var propertyName = propertyInfo.Name;
+                var myPropInfo = type.GetProperty(propertyName);
+                var propertyValue = myPropInfo.GetValue(model, null);
+                var columnName = ((ColumnNameAttribute)(customAttributes[0])).ColumnName;
+
+                Fields.Add(columnName, propertyValue);
+            }
+
+            // Table name will be the class name
+            //Name = type.Name.ToTableName();
+            Name =
+                ((TableNameAttribute[]) Attribute.GetCustomAttributes(type, typeof (TableNameAttribute)))[0].TableName;
+
+            RealName = StringHelper.SplitCamelCase(type.Name);
+        }
+
+        public override string ToString()
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.Append("<");
+            sb.AppendFormat("#{0}:", Name);
+            foreach (var field in Fields)
+            {
+                sb.AppendFormat(" [{0} => {1}] ", field.Key, field.Value);
+            }
+            sb.Append(">");
+
+            return sb.ToString();
+        }
+    }
+}

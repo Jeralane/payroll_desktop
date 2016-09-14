@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<modules>
+  <module>
+    <name>tax_groups</name>
+    <title>Tax Groups</title>
+    <description>Here is a matrix of all Tax Groups. To filter, type in the Description.</description>
+  </module>
+</modules>

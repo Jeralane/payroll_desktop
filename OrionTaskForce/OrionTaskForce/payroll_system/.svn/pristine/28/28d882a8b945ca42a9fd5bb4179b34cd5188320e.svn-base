@@ -1,0 +1,89 @@
+﻿<Window x:Class="PayrollSystem.Views.Helpers.SearchModule.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Search"
+        Background="{DynamicResource SearchModuleColor}"
+        FontSize="13"
+        Icon="/PayrollSystem;component/Images/tick_icon.png"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="ButtonElementStyle" TargetType="{x:Type StackPanel}">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    <Grid Width="400" Height="570">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Background="#1E000000">
+            <StackPanel Margin="8" Orientation="Horizontal">
+                <StackPanel Margin="4,4,4,4" Style="{DynamicResource ButtonElementStyle}">
+                    <StackPanel Width="26" Height="26">
+                        <Image Source="/PayrollSystem;component/Images/hotel.png" />
+                    </StackPanel>
+                    <StackPanel Margin="4,0,0,0" Orientation="Vertical">
+                        <TextBlock Style="{DynamicResource ModuleTitle}" Text="Search Module" />
+                        <TextBlock Style="{DynamicResource ModuleDescription}" Text="Enter keyword or part of it in the search box provided." />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1"
+              Height="26"
+              Margin="8,12,8,0"
+              VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="8" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Center"
+                       Foreground="{DynamicResource CaptionColor}"
+                       Text="Filter by keyword" />
+            <TextBox x:Name="txtFilterByKeyword"
+                     Grid.Column="2"
+                     VerticalContentAlignment="Center"
+                     Padding="2" />
+            <Button Name="btnSelect"
+                    Grid.Column="5"
+                    Width="26"
+                    Content="..." />
+        </Grid>
+        <DataGrid x:Name="grdList"
+                  Grid.Row="2"
+                  Margin="8"
+                  AutoGenerateColumns="False"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="WhiteSmoke"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding Collection}"
+                  SelectedItem="{Binding SelectedItem}"
+                  SelectionMode="Single"
+                  VerticalGridLinesBrush="WhiteSmoke">
+            <DataGrid.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </DataGrid.BorderBrush>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="60"
+                                    Binding="{Binding Id}"
+                                    Header="Id" />
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Name}"
+                                    Header="Keyword" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

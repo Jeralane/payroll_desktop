@@ -1,0 +1,492 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:helpers="clr-namespace:PayrollSystem.Helpers"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+		
+        <!--  Numeric format  -->
+        <Style x:Key="NumericDataGridTextColumn" TargetType="{x:Type TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="Padding" Value="3,0,3,0" />
+        </Style>
+
+        <!-- Normal Colored Caption -->
+        <Style x:Key="AttributeLabel" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#FF336699" />
+            <Setter Property="Margin" Value="0,6,0,2" />
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        </Style>
+
+        <!-- Light Colored Caption -->
+        <Style x:Key="AttributeLabelLight" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#7FFFFFFF" />
+            <Setter Property="Margin" Value="0,6,0,2" />
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        </Style>
+		
+		<!-- Dark Colored Caption -->
+        <Style x:Key="AttributeLabelDark" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#7F000000" />
+            <Setter Property="Margin" Value="0,6,0,2" />
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        </Style>
+		
+        <helpers:DecimalConverter x:Key="DecimalConverter" />
+        <helpers:MonthConverter x:Key="MonthConverter" />
+
+        <DataTemplate x:Key="ExpanderHeader">
+            <TextBlock FontSize="16"
+                       FontStyle="Normal"
+                       FontWeight="Bold"
+                       Foreground="#FF202020"
+                       Text="{Binding}"
+                       TextWrapping="Wrap" />
+        </DataTemplate>
+
+        <Style x:Key="ModuleTitle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="13.333" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="#FA333333" />
+        </Style>
+        <Style x:Key="ModuleDescription" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#EE333333" />
+            <Setter Property="Margin" Value="0,-3,0,0" />
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        </Style>
+        <Style x:Key="ModuleItem" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="Margin" Value="4" />
+            <Setter Property="Padding" Value="2" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+        </Style>
+
+
+        <helpers:DatePickerConverter x:Key="DatePickerConverter1" />
+        <SolidColorBrush x:Key="WindowBackground" Color="White" />
+        <SolidColorBrush x:Key="GroupTitleBrush" Color="#FF996633" />
+        <SolidColorBrush x:Key="CaptionColor" Color="#EE333333" />
+		<SolidColorBrush x:Key="LightCaptionColor" Color="#7FFFFFFF" />
+		
+		<!-- http://www.colorhexa.com/color-names -->
+		
+		<!-- Pastel blue -->
+		<SolidColorBrush x:Key="UserModuleColor" Color="#FFAEC6CF" />
+		
+		<!-- Asparagus -->
+		<SolidColorBrush x:Key="Asparagus" Color="#FF87A96B" />
+		
+		<!-- Burlywood -->
+		<SolidColorBrush x:Key="SssContributionModuleColor" Color="#FFDEB887" />
+
+
+		<!-- Amaranth -->
+		<SolidColorBrush x:Key="PayrollPeriodModuleColor" Color="#FFE52B50" />
+		
+		<!-- Amber -->
+		<SolidColorBrush x:Key="EmployeeStatusModuleColor" Color="#FFFFBF00" />
+		
+		<!-- Air Force Blue -->
+		<SolidColorBrush x:Key="DetachmentModuleColor" Color="#FF5D8AA8" />
+		
+		<!-- Android Green -->
+		<SolidColorBrush x:Key="EmployeeModuleColor" Color="#FFA4C639" />
+		
+		<!-- Antique Brass -->
+		<SolidColorBrush x:Key="TaxGroupModuleColor" Color="#FFCD9575" />
+		
+		<!-- Atomic Tangerine -->
+		<SolidColorBrush x:Key="BillingModuleColor" Color="#FFFF9966" />
+		
+		<!-- Bright Lavender -->
+		<SolidColorBrush x:Key="BrightLavender" Color="#FFBF94E4" />
+		
+		<!-- Cambridge Blue -->
+		<SolidColorBrush x:Key="PhilhealthContributionModuleColor" Color="#FFA3C1AD" />
+
+		<!-- Blush -->
+		<SolidColorBrush x:Key="FixedDeductionModuleColor" Color="#FFDE5D83" />
+		
+		<!-- Grullo -->
+		<SolidColorBrush x:Key="WithholdingTaxDeductionModuleColor" Color="#FFA99A86" />
+		
+		<!-- Cocoa brown -->
+		<SolidColorBrush x:Key="SearchModuleColor" Color="#FFd2691e" />
+		
+        <BorderGapMaskConverter x:Key="BorderGapMaskConverter" />
+        <!--  Control colors.  -->
+
+        <Color x:Key="WindowColor">#FF62C2CC</Color>
+        <!--  <Color x:Key="WindowColor">#FFE8EDF9</Color>  -->
+
+        <Color x:Key="ContentAreaColorLight">#FFABEEF6</Color>
+        <Color x:Key="ContentAreaColorDark">#FF62C2CC</Color>
+
+        <Color x:Key="DisabledControlLightColor">#FFE8EDF9</Color>
+        <Color x:Key="DisabledControlDarkColor">#FFC5CBF9</Color>
+        <Color x:Key="DisabledForegroundColor">#FF888888</Color>
+
+        <Color x:Key="SelectedBackgroundColor">#FFC5CBF9</Color>
+        <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
+
+        <Color x:Key="ControlLightColor">White</Color>
+        <Color x:Key="ControlMediumColor">#FF62C2CC</Color>
+        <Color x:Key="ControlDarkColor">#FF238792</Color>
+
+        <Color x:Key="ControlMouseOverColor">#FF34BCCA</Color>
+        <Color x:Key="ControlPressedColor">#FF199FAD</Color>
+
+
+        <Color x:Key="GlyphColor">#FF444444</Color>
+        <Color x:Key="GlyphMouseOver">sc#1, 0.122138776, 0.5394795, 0.603827357</Color>
+
+        <!--  Border colors  -->
+        <Color x:Key="BorderLightColor">#FFCCCCCC</Color>
+        <Color x:Key="BorderMediumColor">#FF888888</Color>
+        <Color x:Key="BorderDarkColor">#FF444444</Color>
+
+        <Color x:Key="PressedBorderLightColor">#FF888888</Color>
+        <Color x:Key="PressedBorderDarkColor">#FF444444</Color>
+
+        <Color x:Key="DisabledBorderLightColor">#FFAAAAAA</Color>
+        <Color x:Key="DisabledBorderDarkColor">#FF888888</Color>
+
+        <Color x:Key="DefaultBorderBrushLightColor">#FFB4B4B4</Color>
+        <Color x:Key="DefaultBorderBrushDarkColor">#FF3C3C3C</Color>
+
+        <!--  Control-specific resources.  -->
+        <Color x:Key="HeaderTopColor">#FFC5F2F6</Color>
+        <Color x:Key="DatagridCurrentCellBorderColor">Black</Color>
+        <Color x:Key="SliderTrackDarkColor">#FFCAF9FE</Color>
+
+        <Color x:Key="NavButtonFrameColor">#FF36BAC7</Color>
+
+        <LinearGradientBrush x:Key="MenuPopupBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="0" Color="{DynamicResource ControlLightColor}" />
+            <GradientStop Offset="0.5" Color="{DynamicResource ControlMediumColor}" />
+            <GradientStop Offset="1" Color="{DynamicResource ControlLightColor}" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ProgressBarIndicatorAnimatedFill" StartPoint="0,0" EndPoint="1,0">
+            <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Offset="0.004" Color="#0062C2CC" />
+                    <GradientStop Offset="0.4" Color="#6062C2CC" />
+                    <GradientStop Offset="0.6" Color="#6062C2CC" />
+                    <GradientStop Offset="1" Color="#0062C2CC" />
+                </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <!--  Control colors.  -->
+
+
+
+        <!--  GroupBoxTemplate  -->
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type GroupBox}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0"
+                                    BorderThickness="1"
+                                    CornerRadius="2,2,0,0">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="1" Color="{DynamicResource ControlMediumColor}" />
+                                        <GradientStop Color="{DynamicResource ControlLightColor}" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                </Border.BorderBrush>
+
+                                <ContentPresenter Margin="4"
+                                                  ContentSource="Header"
+                                                  RecognizesAccessKey="True">
+                                    <ContentPresenter.Resources>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="Foreground" Value="{DynamicResource DefaultCaptionForeColor}" />
+                                            <Setter Property="FontSize" Value="14" />
+                                            <Setter Property="FontWeight" Value="Bold" />
+                                        </Style>
+                                    </ContentPresenter.Resources>
+                                </ContentPresenter>
+                            </Border>
+
+                            <Border Grid.Row="1"
+                                    BorderThickness="1,0,1,1"
+                                    CornerRadius="0,0,2,2">
+                                <Border.Background>
+                                    <SolidColorBrush Color="{DynamicResource WindowColor}" />
+                                </Border.Background>
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                </Border.BorderBrush>
+                                <ContentPresenter Margin="8,4,8,8" />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--  GroupBoxTemplate  -->
+
+
+
+        <!--  Expander Template  -->
+        <ControlTemplate x:Key="ExpanderToggleButton" TargetType="{x:Type ToggleButton}">
+            <Border x:Name="Border"
+                    BorderThickness="0,0,1,0"
+                    CornerRadius="2,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="{DynamicResource ControlLightColor}" />
+                        <GradientStop Offset="1" Color="{DynamicResource ControlMediumColor}" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStopCollection>
+                                <GradientStop Offset="0.0" Color="{DynamicResource BorderLightColor}" />
+                                <GradientStop Offset="1.0" Color="{DynamicResource BorderDarkColor}" />
+                            </GradientStopCollection>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+
+                </Border.BorderBrush>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                 (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource ControlMouseOverColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                 (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource ControlPressedColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                 (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledControlDarkColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Border.BorderBrush).                 (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledBorderLightColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="CheckStates">
+                        <VisualState x:Name="Checked">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CollapsedArrow" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}" />
+                                </ObjectAnimationUsingKeyFrames>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ExpandededArrow" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}" />
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Unchecked" />
+                        <VisualState x:Name="Indeterminate" />
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Grid>
+                    <Path x:Name="CollapsedArrow"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Data="M 0 0 L 4 4 L 8 0 Z">
+                        <Path.Fill>
+                            <SolidColorBrush Color="{DynamicResource GlyphColor}" />
+                        </Path.Fill>
+                    </Path>
+                    <Path x:Name="ExpandededArrow"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Data="M 0 4 L 4 0 L 8 4 Z"
+                          Visibility="Collapsed">
+                        <Path.Fill>
+                            <SolidColorBrush Color="{DynamicResource GlyphColor}" />
+                        </Path.Fill>
+                    </Path>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type Expander}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Expander}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition x:Name="ContentRow" Height="0" />
+                            </Grid.RowDefinitions>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                       (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledControlDarkColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Border.BorderBrush).                       (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledBorderLightColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="Border"
+                                    Grid.Row="0"
+                                    BorderThickness="1"
+                                    CornerRadius="2,2,0,0">
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Offset="0" Color="{DynamicResource BorderLightColor}" />
+                                        <GradientStop Offset="1" Color="{DynamicResource BorderDarkColor}" />
+                                    </LinearGradientBrush>
+
+                                </Border.BorderBrush>
+                                <Border.Background>
+
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStopCollection>
+                                                <GradientStop Offset="0.0" Color="{DynamicResource ControlLightColor}" />
+                                                <GradientStop Offset="0.997" Color="{DynamicResource ControlMediumColor}" />
+                                            </GradientStopCollection>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+
+                                </Border.Background>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <ToggleButton IsChecked="{Binding IsExpanded,
+                                                                      Mode=TwoWay,
+                                                                      RelativeSource={RelativeSource TemplatedParent}}"
+                                                  OverridesDefaultStyle="True"
+                                                  Template="{StaticResource ExpanderToggleButton}">
+                                        <ToggleButton.Background>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0" Color="{DynamicResource ControlLightColor}" />
+                                                <GradientStop Offset="1" Color="{DynamicResource ControlMediumColor}" />
+                                            </LinearGradientBrush>
+                                        </ToggleButton.Background>
+                                    </ToggleButton>
+                                    <ContentPresenter Grid.Column="1"
+                                                      Margin="4"
+                                                      ContentSource="Header"
+                                                      RecognizesAccessKey="True">
+                                        <ContentPresenter.Resources>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Foreground" Value="{DynamicResource DefaultCaptionForeColor}" />
+                                                <Setter Property="FontSize" Value="14" />
+                                                <Setter Property="FontWeight" Value="Bold" />
+                                            </Style>
+                                        </ContentPresenter.Resources>
+                                    </ContentPresenter>
+                                </Grid>
+                            </Border>
+                            <Border x:Name="Content"
+                                    Grid.Row="1"
+                                    BorderThickness="1,0,1,1"
+                                    CornerRadius="0,0,2,2">
+                                <Border.Background>
+                                    <SolidColorBrush Color="{DynamicResource WindowColor}" />
+                                </Border.Background>
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                </Border.BorderBrush>
+                                <ContentPresenter Margin="8,4,8,8" />
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded" Value="True">
+                                <Setter TargetName="ContentRow" Property="Height" Value="{Binding Height, ElementName=Content}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="TextBoxBorder" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,20">
+            <GradientStop Offset="0.05" Color="#ABADB3" />
+            <GradientStop Offset="0.07" Color="#E2E3EA" />
+            <GradientStop Offset="1" Color="#E3E9EF" />
+        </LinearGradientBrush>
+        <!--  Expander Template  -->
+
+        <!--  Textbox Template  -->
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="MinWidth" Value="120" />
+            <Setter Property="MinHeight" Value="24" />
+            <Setter Property="AllowDrop" Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border x:Name="Border"
+                                BorderThickness="1"
+                                CornerRadius="2"
+                                Padding="2">
+                            <Border.Background>
+                                <SolidColorBrush Color="#FFFFFFFF" />
+                            </Border.Background>
+                            <Border.BorderBrush>
+                                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                            </Border.BorderBrush>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                     (SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledControlLightColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="ReadOnly">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).                     (SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledControlDarkColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          Margin="0"
+                                          FontSize="13.333" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    <helpers:PaymentTypeConverter x:Key="PaymentTypeConverter" />
+    <helpers:PeriodIdConverter x:Key="PeriodIdConverter" />
+    <!--  Textbox Template  -->
+
+    </Application.Resources>
+</Application>

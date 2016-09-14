@@ -1,0 +1,174 @@
+﻿<Window x:Class="PayrollSystem.Views.Detachments.DetachmentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:payroll="clr-namespace:PayrollSystem.Models"
+        x:Name="Window"
+        Title="Detachment Details"
+        Icon="/PayrollSystem;component/Images/hotel.png"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" Background="{DynamicResource DetachmentModuleColor}">
+    <Window.DataContext>
+        <payroll:Detachment />
+    </Window.DataContext>
+    <Grid Width="720">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" d:LayoutOverrides="Width, Height" Margin="16,16,16,32">
+    		<Grid>
+    			<Grid.RowDefinitions>
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="12" />
+    				<RowDefinition Height="Auto"/>
+    				<RowDefinition Height="Auto" />					
+    				<RowDefinition Height="12" />
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="12" />
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="Auto"/>
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="12" />
+    				<RowDefinition Height="Auto"/>
+    				<RowDefinition Height="Auto" />
+    				<RowDefinition Height="12" />
+    				<RowDefinition Height="Auto"/>
+    				<RowDefinition Height="Auto" />
+    			</Grid.RowDefinitions>
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition />
+    				<ColumnDefinition Width="8" />
+    				<ColumnDefinition />
+    				<ColumnDefinition Width="8" />
+    				<ColumnDefinition />
+    				<ColumnDefinition Width="8" />
+    				<ColumnDefinition />
+    			</Grid.ColumnDefinitions>
+    			<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Detachment Name" Grid.ColumnSpan="4" d:LayoutOverrides="Height" />
+    			<TextBox x:Name="txtName" Text="{Binding Name}" Grid.ColumnSpan="3" d:LayoutOverrides="Height" Grid.Row="1" />
+    			<CheckBox x:Name="chkIsBillingExempted"
+    				Content="Exempted from Billing"
+    				IsChecked="{Binding IsBillingExempted}" d:LayoutOverrides="Width" Grid.Row="1" Grid.Column="4" Foreground="#7FFFFFFF" VerticalAlignment="Center" />
+    			<CheckBox x:Name="chkIsTaxExempted"
+    				Content="Tax Exempted"
+    				IsChecked="{Binding IsTaxExempted}" d:LayoutOverrides="Width" Grid.Row="1" Grid.Column="6" Foreground="#7FFFFFFF" VerticalAlignment="Center" />
+    			<TextBlock Grid.ColumnSpan="7"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				d:LayoutOverrides="Width, Height" Grid.Row="3" Margin="0,-0.76,0,2"><Run Text="Address" /></TextBlock>
+    			<TextBox x:Name="txtAddress"
+    				Grid.Row="4"
+    				Grid.ColumnSpan="7"
+    				Text="{Binding Address}"
+    				d:LayoutOverrides="Width, Height" />
+    			<TextBlock Grid.Row="6"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Hours Per Day" Margin="0,-2.9,0,2" />
+    			<TextBox x:Name="txtHoursPerDay"
+    				Grid.Row="7"
+    				Text="{Binding HoursPerDay, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}"
+    				d:LayoutOverrides="Width, Height" />
+    			<TextBlock Grid.Row="6"
+    				Grid.Column="2"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Number Of Guards" Margin="0,-2.9,0,2" />
+    			<TextBox x:Name="txtNumberOfGuards"
+    				Grid.Row="7"
+    				Grid.Column="2"
+    				Text="{Binding NumberOfGuards}" />
+    			<TextBlock Grid.Row="10"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Monthly Contract Amount" Margin="0,0.82,0,2" />
+    			<TextBox x:Name="txtMonthlyContractAmount"
+    				Grid.Row="11"
+    				Text="{Binding MonthlyContractAmount, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="10"
+    				Grid.Column="2"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Monthly Rate" Margin="0,0.82,0,2" />
+    			<TextBox x:Name="txtMonthlyRate"
+    				Grid.Row="11"
+    				Grid.Column="2"
+    				Text="{Binding MonthlyRate, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="10"
+    				Grid.Column="4"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Monthly Allowance" Margin="0,0.82,0,2" />
+    			<TextBox x:Name="txtMonthlyAllowance"
+    				Grid.Row="11"
+    				Grid.Column="4"
+    				Text="{Binding MonthlyAllowance, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="13"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Daily Rate" Margin="0,0.26,0,2" />
+    			<TextBox x:Name="txtDailyRate"
+    				Grid.Row="14"
+    				Text="{Binding DailyRate, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="13"
+    				Grid.Column="2"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Cost Of Living Allowance" Margin="0,0.26,0,2" />
+    			<TextBox x:Name="txtCostOfLivingAllowance"
+    				Grid.Row="14"
+    				Grid.Column="2"
+    				Text="{Binding CostOfLivingAllowance, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="13"
+    				Grid.Column="4"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Night Differential Rate" Margin="0,0.26,0,2" />
+    			<TextBox x:Name="txtNightDifferentialRate"
+    				Grid.Row="14"
+    				Grid.Column="4"
+    				Text="{Binding NightDifferentialRate, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="13"
+    				Grid.Column="6"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Adjustment" Margin="0,0.26,0,2" />
+    			<TextBox x:Name="txtAdjustment"
+    				Grid.Row="14"
+    				Grid.Column="6"
+    				Text="{Binding Adjustment, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+    			<TextBlock Grid.Row="16"
+    				Grid.ColumnSpan="7"
+    				Style="{DynamicResource AttributeLabelLight}"
+    				Text="Remarks" Margin="0,-0.86,0,2" />
+    			<TextBox x:Name="txtRemarks"
+    				Grid.Row="17"
+    				Grid.ColumnSpan="7"
+    				Text="{Binding Remarks}" />
+    		</Grid>
+    	</StackPanel>
+        <Border Grid.Row="1">
+            <Border.Background>
+                <SolidColorBrush Color="#1E000000" />
+            </Border.Background>
+        </Border>
+        <StackPanel Grid.Row="1"
+                    Margin="8"
+                    Orientation="Horizontal">
+            <Button x:Name="btnEmployerDetails"
+                    Width="112"
+                    Height="23"
+                    Content="Employer Details"
+                    Visibility="Collapsed" />
+        </StackPanel>
+        <StackPanel x:Name="Action"
+                    Grid.Row="1"
+                    Margin="8"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button x:Name="btnSave"
+                    Width="75"
+                    Margin="0,0,4,0"
+                    Content="Save" />
+            <Button x:Name="btnCancel"
+                    Width="75"
+                    Content="Cancel" />
+        </StackPanel>
+    </Grid>
+</Window>

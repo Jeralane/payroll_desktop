@@ -1,0 +1,11 @@
+F:\SoftwareProjects\payroll_system\string_helper\bin\Debug\string_helper.exe
+F:\SoftwareProjects\payroll_system\string_helper\bin\Debug\string_helper.pdb
+F:\SoftwareProjects\payroll_system\string_helper\bin\Debug\DatabaseLibrary.dll
+F:\SoftwareProjects\payroll_system\string_helper\bin\Debug\MySql.Data.dll
+F:\SoftwareProjects\payroll_system\string_helper\bin\Debug\DatabaseLibrary.pdb
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.csprojResolveAssemblyReference.cache
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.Form1.resources
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.Properties.Resources.resources
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.csproj.GenerateResource.Cache
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.exe
+F:\SoftwareProjects\payroll_system\string_helper\obj\x86\Debug\string_helper.pdb

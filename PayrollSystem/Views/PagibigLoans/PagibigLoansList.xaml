@@ -1,0 +1,83 @@
+﻿<Window x:Class="PayrollSystem.Views.PagibigLoans.PagibigLoansList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        Title="Pagibig Loans List"
+        Icon="/PayrollSystem;component/Images/pagibig.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource PagibigLoansListColor}"
+          Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8">
+            <Grid x:Name="Buttons"
+                  Height="26"
+                  DockPanel.Dock="Bottom">
+                <Button x:Name="btnAdd"
+                        Width="80"
+                        HorizontalAlignment="Left"
+                        Content="Add" />
+                <Button x:Name="btnEdit"
+                        Width="80"
+                        Margin="84,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Edit" />
+                <Button x:Name="btnDelete"
+                        Width="80"
+                        Margin="168,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Delete" />
+            </Grid>
+            <Grid x:Name="SearchPanel"
+                  DockPanel.Dock="Top">
+
+                <l:SearchTextBox x:Name="txtFilterByKeyword"
+                                 VerticalContentAlignment="Center"
+                                 LabelText="Search employee"
+                                 SearchMode="Delayed" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+                      Margin="0,2,0,6"
+                      AutoGenerateColumns="False"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="WhiteSmoke"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      VerticalGridLinesBrush="WhiteSmoke" Background="#E5FFFFFF">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="30"
+                                        Binding="{Binding row_number}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="#" />
+                    <DataGridTextColumn Width="120"
+                                        Binding="{Binding transaction_date,
+                                                          StringFormat=\{0:d\}}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Transaction Date" />
+                    <DataGridTextColumn Width="230"
+                                        Binding="{Binding employee_name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Employee Name" />
+                    <DataGridTextColumn Width="*"
+                                        Binding="{Binding start_payroll_period_description}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Start Period" />
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding pagibig_loan_amount,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Amount" />
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding pagibig_loan_monthly,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Monthly" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

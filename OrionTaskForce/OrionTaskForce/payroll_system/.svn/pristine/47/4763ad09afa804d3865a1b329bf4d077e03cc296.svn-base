@@ -1,0 +1,70 @@
+﻿<Window x:Class="PayrollSystem.Views.Billings.BillingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:payroll="clr-namespace:PayrollSystem.Models"
+        x:Name="Window"
+        Title="Billing Details"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen" Background="{DynamicResource BillingModuleColor}">
+    <Window.DataContext>
+        <payroll:Billing />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data"
+                    Grid.Row="0"
+                    Width="300"
+                    Margin="16,16,16,8">
+        	<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Agency Fee" />
+        	<TextBox x:Name="txtMinimum"
+        		Height="23"
+        		Margin="0,0,0,8"
+        		Padding="2"
+        		Text="{Binding AgencyFee, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+        	<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Agency Vat Fee" />
+        	<TextBox x:Name="txtMaximum"
+        		Height="23"
+        		Margin="0,0,0,8"
+        		Padding="2"
+        		Text="{Binding AgencyVatFee, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+        	<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Agency Fee Total" />
+        	<TextBox x:Name="txtEmployeeShare"
+        		Height="23"
+        		Margin="0,0,0,8"
+        		Padding="2"
+        		Text="{Binding AgencyFeeTotal, Converter={StaticResource DecimalConverter}, StringFormat=\{0:N\}}" />
+        	<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Billing Number" />
+        	<TextBox x:Name="txtEmployerShare"
+        		Height="23"
+        		Margin="0,0,0,8"
+        		Padding="2"
+        		Text="{Binding BillingNumber}" />
+        	<TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Billing Type" />
+        	<TextBox x:Name="txtTotal"
+        		Height="23"
+        		Margin="0,0,0,8"
+        		Padding="2"
+        		Text="{Binding BillingType, StringFormat=\{0:N\}}" />
+        </StackPanel>
+        <Border Grid.Row="1" Background="#1E000000" />
+        <StackPanel x:Name="Action"
+                    Grid.Row="1"
+                    Margin="8"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button x:Name="btnSave"
+                    Width="75"
+                    Height="23"
+                    Margin="0,0,4,0"
+                    Content="Save" />
+            <Button x:Name="btnCancel"
+                    Width="75"
+                    Height="23"
+                    Content="Cancel" />
+        </StackPanel>
+    </Grid>
+</Window>

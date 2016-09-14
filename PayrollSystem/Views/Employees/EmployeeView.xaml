@@ -1,0 +1,343 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.Employees.EmployeeView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:models="clr-namespace:PayrollSystem.Models"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Employee"
+                  Icon="/PayrollSystem;component/Images/workers.png"
+                  Style="{DynamicResource RootWindow}"
+                  WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <models:Employee />
+    </Window.DataContext>
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource EmployeeViewColor}"
+          Style="{DynamicResource RootGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="1" Margin="8">
+            <TabItem Header="Personal Details">
+                <Grid Background="WhiteSmoke">
+                    <ScrollViewer>
+                        <StackPanel Margin="8">
+                            <TextBlock Style="{DynamicResource ModuleTitle}" Text="Name and Personal Details" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Last Name" />
+                            <TextBox Text="{Binding LastName}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="First Name" />
+                            <TextBox Text="{Binding FirstName}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Middle Name" />
+                            <TextBox Text="{Binding MiddleName}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Birth Date" />
+                            <DatePicker SelectedDate="{Binding BirthDate, Converter={StaticResource DatePickerConverter1}}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Birth Place" />
+                            <TextBox Text="{Binding BirthPlace}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Gender" />
+                            <ComboBox x:Name="cboGender"
+                                      Height="Auto"
+                                      Background="White"
+                                      SelectedItem="{Binding Gender}">
+                                <ComboBox.BorderBrush>
+                                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                </ComboBox.BorderBrush>
+                            </ComboBox>
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Nationality" />
+                            <TextBox Text="{Binding Nationality}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Religion" />
+                            <TextBox Text="{Binding Religion}" />
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Civil Status" />
+                            <ComboBox x:Name="cboCivilStatus"
+                                      Background="White"
+                                      SelectedItem="{Binding CivilStatus}">
+                                <ComboBox.BorderBrush>
+                                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                </ComboBox.BorderBrush>
+                            </ComboBox>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Contact Details">
+                <Grid Background="WhiteSmoke">
+                    <StackPanel Margin="8">
+                        <TextBlock Style="{DynamicResource ModuleTitle}" Text="Contact Numbers and Addresses" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Land Line Number" />
+                        <TextBox Text="{Binding LandLineNumber}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Mobile Number" />
+                        <TextBox Text="{Binding CellPhoneNumber}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Email Address" />
+                        <TextBox Text="{Binding EmailAddress}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Current Address" />
+                        <TextBox Text="{Binding CurrentAddress}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Permanent Address" />
+                        <TextBox Text="{Binding PermanentAddress}" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Educational Background">
+                <Grid Background="WhiteSmoke">
+                    <ScrollViewer>
+                        <StackPanel Margin="8">
+
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Elementary" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="School Name, Address" />
+                                <TextBox Text="{Binding ElementarySchoolName}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Year Attended" />
+                                <TextBox Text="{Binding ElementaryYearAttended}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Merits" />
+                                <TextBox Text="{Binding ElementaryMerits}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="High School" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="School Name, Address" />
+                                <TextBox Text="{Binding HighSchoolName}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Year Attended" />
+                                <TextBox Text="{Binding HighSchoolYearAttended}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Merits" />
+                                <TextBox Text="{Binding HighSchoolMerits}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="College" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="School Name, Address" />
+                                <TextBox Text="{Binding CollegeSchoolName}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Year Attended" />
+                                <TextBox Text="{Binding CollegeYearAttended}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Merits" />
+                                <TextBox Text="{Binding CollegeMerits}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Course" />
+                                <TextBox Text="{Binding CollegeCourse}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Higher Studies" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="School Name, Address" />
+                                <TextBox Text="{Binding HigherStudiesSchoolName}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Year Attended" />
+                                <TextBox Text="{Binding HigherStudiesYearAttended}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Merits" />
+                                <TextBox Text="{Binding HigherStudiesMerits}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Course" />
+                                <TextBox Text="{Binding HigherStudiesCourse}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Vocational" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="School Name, Address" />
+                                <TextBox Text="{Binding VocationalSchoolName}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Year Attended" />
+                                <TextBox Text="{Binding VocationalYearAttended}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Merits" />
+                                <TextBox Text="{Binding VocationalMerits}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Course" />
+                                <TextBox Text="{Binding VocationalCourse}" />
+
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Work Related">
+                <Grid Background="WhiteSmoke">
+                    <ScrollViewer>
+                        <StackPanel Margin="8">
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Employment" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Issued ID" />
+                                <TextBox Text="{Binding IssuedIdNumber}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date Applied" />
+                                <DatePicker SelectedDate="{Binding DateApplied, Converter={StaticResource DatePickerConverter1}}" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date Hired" />
+                                <DatePicker SelectedDate="{Binding DateHired, Converter={StaticResource DatePickerConverter1}}" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date End" />
+                                <DatePicker SelectedDate="{Binding DateEnd, Converter={StaticResource DatePickerConverter1}}" />
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Margin="0,0,-18,0"
+                                           Style="{DynamicResource ModuleTitle}"
+                                           Text="Identification" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Tax Identification Number" />
+                                <TextBox Text="{Binding TaxIdentificationNumber}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Tax Group" />
+                                <ComboBox x:Name="cboTaxGroup"
+                                          Height="24"
+                                          Background="White"
+                                          DisplayMemberPath="Description"
+                                          SelectedValue="{Binding TaxGroupId}"
+                                          SelectedValuePath="Id">
+                                    <ComboBox.BorderBrush>
+                                        <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                                    </ComboBox.BorderBrush>
+                                </ComboBox>
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Social Security Number" />
+                                <TextBox Text="{Binding SocialSecurityNumber}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Pagibig Number" />
+                                <TextBox Text="{Binding PagibigNumber}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Philhealth Number" />
+                                <TextBox Text="{Binding PhilhealthNumber}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Previous Employer" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Employer Name" />
+                                <TextBox Text="{Binding Company1Name}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Address" />
+                                <TextBox Text="{Binding Company1Location}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date Hired" />
+                                <DatePicker SelectedDate="{Binding Company1DateEmployed, Converter={StaticResource DatePickerConverter1}}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Position" />
+                                <TextBox Text="{Binding Company1Position}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Reason for Leaving" />
+                                <TextBox Text="{Binding Company1ReasonLeaving}" />
+
+                            </StackPanel>
+                            <StackPanel Margin="0,0,0,16">
+                                <TextBlock Style="{DynamicResource ModuleTitle}" Text="Previous Employer" />
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Employer Name" />
+                                <TextBox Text="{Binding Company2Name}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Address" />
+                                <TextBox Text="{Binding Company2Location}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date Hired" />
+                                <DatePicker SelectedDate="{Binding Company2DateEmployed, Converter={StaticResource DatePickerConverter1}}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Position" />
+                                <TextBox Text="{Binding Company2Position}" />
+
+                                <TextBlock Style="{DynamicResource AttributeLabel}" Text="Reason for Leaving" />
+                                <TextBox Text="{Binding Company2ReasonLeaving}" />
+
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Emergency">
+                <Grid Background="WhiteSmoke">
+                    <StackPanel Margin="8">
+                        <TextBlock Style="{DynamicResource ModuleTitle}" Text="Person to Notify in Case of Emergency" />
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Illness" />
+                        <TextBox Text="{Binding IllnessAllergiesSpecify}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Person to notify" />
+                        <TextBox Text="{Binding EmergencyNotifyPerson}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Address" />
+                        <TextBox Text="{Binding EmergencyNotifyAddress}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Contact Number" />
+                        <TextBox Text="{Binding EmergencyNotifyTelephone}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Relationship" />
+                        <TextBox Text="{Binding EmergencyNotifyRelation}" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="References">
+                <Grid Background="WhiteSmoke">
+                    <StackPanel Margin="8">
+
+                        <StackPanel Margin="0,0,0,16">
+                            <TextBlock Style="{DynamicResource ModuleTitle}" Text="Personal Reference" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Name" />
+                            <TextBox Text="{Binding Reference1Name}" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Address" />
+                            <TextBox Text="{Binding Reference1Address}" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Contact Number" />
+                            <TextBox Text="{Binding Reference1Telephone}" />
+
+                        </StackPanel>
+
+                        <StackPanel Margin="0,0,0,16">
+                            <TextBlock Style="{DynamicResource ModuleTitle}" Text="Personal Reference" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Name" />
+                            <TextBox Text="{Binding Reference2Name}" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Address" />
+                            <TextBox Text="{Binding Reference2Address}" />
+
+                            <TextBlock Style="{DynamicResource AttributeLabel}" Text="Contact Number" />
+                            <TextBox Text="{Binding Reference2Telephone}" />
+
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Others">
+                <Grid Background="WhiteSmoke">
+                    <StackPanel Margin="8">
+                        <TextBlock Style="{DynamicResource ModuleTitle}" Text="Other Records" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Criminal Case" />
+                        <TextBox Text="{Binding CriminalCaseSpecify}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date" />
+                        <DatePicker SelectedDate="{Binding CriminalCaseDate, Converter={StaticResource DatePickerConverter1}}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Convicted" />
+                        <TextBox Text="{Binding ConvictedSpecify}" />
+
+                        <TextBlock Style="{DynamicResource AttributeLabel}" Text="Date" />
+
+                        <DatePicker SelectedDate="{Binding ConvictedDate, Converter={StaticResource DatePickerConverter1}}" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Border Grid.Row="2" Background="#1E000000">
+            <StackPanel x:Name="Action"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

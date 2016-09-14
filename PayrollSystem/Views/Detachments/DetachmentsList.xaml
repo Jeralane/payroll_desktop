@@ -1,0 +1,129 @@
+﻿<Window x:Class="PayrollSystem.Views.Detachments.DetachmentsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:PayrollSystem.UserControls"
+        Title="Detachment List"
+        Icon="/PayrollSystem;component/Images/hotel.png"
+        Style="{DynamicResource RootWindow}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="RootGrid"
+          Background="{DynamicResource DetachmentsListColor}"
+          Style="{DynamicResource RootGrid}">
+        <DockPanel Margin="8">
+            <Grid x:Name="SearchPanel"
+                  DockPanel.Dock="Top">
+
+                <l:SearchTextBox x:Name="txtFilterByKeyword"
+                                 VerticalContentAlignment="Center"
+                                 LabelText="Search detachment by name or address"
+                                 SearchMode="Delayed" />
+            </Grid>
+            <Grid x:Name="Buttons"
+                  Height="26"
+                  DockPanel.Dock="Bottom">
+                <Button x:Name="btnAdd"
+                        Width="80"
+                        HorizontalAlignment="Left"
+                        Content="Add" />
+                <Button x:Name="btnEdit"
+                        Width="80"
+                        Margin="84,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Edit" />
+                <Button x:Name="btnDelete"
+                        Width="80"
+                        Margin="168,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Delete" />
+            </Grid>
+            <DataGrid x:Name="dataGrid1"
+                      Margin="0,2,0,6"
+                      AutoGenerateColumns="False"
+                      Background="#E5FFFFFF"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="WhiteSmoke"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      VerticalGridLinesBrush="WhiteSmoke">
+                <DataGrid.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                </DataGrid.BorderBrush>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding row_number}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="#" />
+
+                    <DataGridTextColumn Width="240"
+                                        Binding="{Binding name}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Detachment Name" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding hours_per_day,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Hours/Day" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding number_of_guards,
+                                                          StringFormat=\{0:N0\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Guards" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding monthly_contract_amount,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Contract" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding monthly_allowance,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Allowance" />
+
+                    <DataGridTextColumn Binding="{Binding monthly_rate,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Monthly Rate" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding daily_rate,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Daily Rate" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding cola,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="COLA" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding night_differential_rate,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="ND Rate" />
+
+                    <DataGridTextColumn Width="80"
+                                        Binding="{Binding adjustment,
+                                                          StringFormat=\{0:N\}}"
+                                        ElementStyle="{DynamicResource NumericDataGridTextColumn}"
+                                        Header="Adjustment" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding address}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Address" />
+
+                    <DataGridTextColumn Width="Auto"
+                                        Binding="{Binding remarks}"
+                                        ElementStyle="{DynamicResource StringDataGridTextColumn}"
+                                        Header="Remarks" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

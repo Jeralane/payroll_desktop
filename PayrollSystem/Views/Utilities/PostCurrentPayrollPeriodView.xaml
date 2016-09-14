@@ -1,0 +1,48 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.Utilities.PostCurrentPayrollPeriodView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:Models="clr-namespace:PayrollSystem.Models"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Post Current Payroll Period"
+                  FontFamily="Segoe UI"
+                  Icon="/PayrollSystem;component/Images/unpin2.png"
+                  ResizeMode="NoResize"
+                  SizeToContent="WidthAndHeight"
+                  WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <Models:PayrollPeriod />
+    </Window.DataContext>
+    <Grid Width="332" Background="{DynamicResource PostCurrentPayrollPeriodViewColor}" Height="166">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data"
+                    Grid.Row="0"
+                    Width="300"
+                    Margin="16,16,16,32">
+            <TextBlock Style="{DynamicResource AttributeLabelLight}" Text="Current Payroll Period" />
+            <TextBox x:Name="textBox1"
+                     Margin="0,0,0,8"
+                     Text="{Binding Description}" IsReadOnly="True" />
+            <CheckBox x:Name="chkIsBillingExempted"
+                      VerticalAlignment="Center"
+                      Content="Posted"
+                      IsChecked="{Binding IsPosted}" />
+        </StackPanel>
+        <Border Grid.Row="1" Background="#1E000000">
+            <StackPanel x:Name="Action"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

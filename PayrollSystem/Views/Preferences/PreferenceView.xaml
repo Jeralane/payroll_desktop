@@ -1,0 +1,171 @@
+﻿<Views:BaseWindow x:Class="PayrollSystem.Views.Preferences.PreferenceView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:local="clr-namespace:PayrollSystem.Views.Preferences"
+                  xmlns:Views="clr-namespace:PayrollSystem.Views"
+                  Title="Preferences"
+                  FontFamily="Segoe UI"
+                  Icon="/PayrollSystem;component/Images/settings.png"
+                  ResizeMode="NoResize"
+                  SizeToContent="WidthAndHeight"
+                  WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:PreferenceViewModel />
+    </Window.DataContext>
+    <Grid Width="600"
+          Height="330"
+          Background="{DynamicResource PreferenceViewColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Data" Margin="16,16,16,32">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="r00" Height="Auto" />
+                    <RowDefinition x:Name="r01" Height="Auto" />
+                    <RowDefinition x:Name="r02" Height="12" />
+
+                    <RowDefinition x:Name="r03" Height="Auto" />
+                    <RowDefinition x:Name="r04" Height="Auto" />
+                    <RowDefinition x:Name="r05" Height="12" />
+
+                    <RowDefinition x:Name="r06" Height="Auto" />
+                    <RowDefinition x:Name="r07" Height="Auto" />
+                    <RowDefinition x:Name="r08" Height="12" />
+
+                    <RowDefinition x:Name="r09" Height="Auto" />
+                    <RowDefinition x:Name="r10" Height="Auto" />
+                    <RowDefinition x:Name="r11" Height="12" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="16" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="PayrollPeriod"
+                           Margin="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Payroll Period" />
+                <TextBlock Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Current" />
+                <Grid Grid.Row="1"
+                      Grid.Column="2"
+                      Grid.ColumnSpan="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="txtCurrentPayrollPeriod" Text="{Binding CurrentPayrollPeriod.Description}" />
+                    <Button x:Name="btnSearchPayrollPeriod" Grid.Column="2">
+                        <Image Margin="3" Source="/PayrollSystem;component/Images/search.png" />
+                    </Button>
+                </Grid>
+                <TextBlock x:Name="Multipliers"
+                           Grid.Row="3"
+                           Margin="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Multipliers" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Regular" />
+                <TextBox Grid.Row="4"
+                         Grid.Column="2"
+                         Text="{Binding Preference.RegularMultiplier,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="4"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Night Differential" />
+                <TextBox Grid.Row="4"
+                         Grid.Column="4"
+                         Text="{Binding Preference.NightDifferentialMultiplier,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="6"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Legal Holiday" />
+                <TextBox Grid.Row="4"
+                         Grid.Column="6"
+                         Text="{Binding Preference.LegalHolidayMultiplier,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="8"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Special Holiday" />
+                <TextBox Grid.Row="4"
+                         Grid.Column="9"
+                         Text="{Binding Preference.SpecialHolidayMultiplier,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock x:Name="Divisors"
+                           Grid.Row="6"
+                           Margin="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Divisors" />
+                <TextBlock Grid.Row="6"
+                           Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Overtime" />
+                <TextBox Grid.Row="7"
+                         Grid.Column="2"
+                         Text="{Binding Preference.OvertimeDivisor,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock Grid.Row="6"
+                           Grid.Column="4"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Night Differential" />
+                <TextBox Grid.Row="7"
+                         Grid.Column="4"
+                         Text="{Binding Preference.NightDifferentialDivisor,
+                                        Converter={StaticResource DecimalConverter}}" />
+                <TextBlock x:Name="Billing"
+                           Grid.Row="9"
+                           Margin="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="13.333"
+                           FontWeight="Bold"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Billing" />
+                <TextBlock Grid.Row="9"
+                           Grid.Column="2"
+                           Style="{DynamicResource AttributeLabelLight}"
+                           Text="Last Billing No." />
+                <TextBox Grid.Row="10"
+                         Grid.Column="2"
+                         Text="{Binding Preference.LastBillingNumber}" />
+            </Grid>
+        </StackPanel>
+        <Border Grid.Row="1" Background="#1E000000">
+            <StackPanel x:Name="Action"
+                        Margin="8"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button x:Name="btnSave"
+                        Width="75"
+                        Margin="0,0,4,0"
+                        Content="Save" />
+                <Button x:Name="btnCancel"
+                        Width="75"
+                        Content="Cancel" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseWindow>

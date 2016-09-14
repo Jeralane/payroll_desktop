@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C886A93-B88F-42D2-96B6-1B28C241041A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PayrollSystem</RootNamespace>
+    <AssemblyName>PayrollSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pelfusion_long_shadow_media_calculator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net40\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Helpers\DataConverter.cs" />
+    <Compile Include="Helpers\ModelFinder.cs" />
+    <Compile Include="Helpers\PaymentTypeConverter.cs" />
+    <Compile Include="Helpers\DatePickerConverter.cs" />
+    <Compile Include="Helpers\PayrollDictionary.cs" />
+    <Compile Include="Helpers\PeriodIdConverter.cs" />
+    <Compile Include="Helpers\MonthConverter.cs" />
+    <Compile Include="Helpers\DecimalConverter.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Billing.cs" />
+    <Compile Include="Models\CashAdvance.cs" />
+    <Compile Include="Models\Detachment.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeStatus.cs" />
+    <Compile Include="Models\Employer.cs" />
+    <Compile Include="Models\FixedDeduction.cs" />
+    <Compile Include="Models\Incentive.cs" />
+    <Compile Include="Models\PagibigLoan.cs" />
+    <Compile Include="Models\Payroll.cs" />
+    <Compile Include="Models\PayrollPeriod.cs" />
+    <Compile Include="Models\PhilhealthContribution.cs" />
+    <Compile Include="Models\Preference.cs" />
+    <Compile Include="Models\SssContribution.cs" />
+    <Compile Include="Models\SssLoan.cs" />
+    <Compile Include="Models\TaxGroup.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\WithholdingTaxDeduction.cs" />
+    <Compile Include="PayrollDbContext.cs" />
+    <Compile Include="Tester.xaml.cs">
+      <DependentUpon>Tester.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchTextBox.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Views\Assignments\AssignmentViewModel.cs" />
+    <Compile Include="Views\Attendances\AttendancesPerDetachmentView.xaml.cs">
+      <DependentUpon>AttendancesPerDetachmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Attendances\AttendancesList.xaml.cs">
+      <DependentUpon>AttendancesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Attendances\AttendanceView.xaml.cs">
+      <DependentUpon>AttendanceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Attendances\AttendanceViewModel.cs" />
+    <Compile Include="Views\BaseWindow.cs" />
+    <Compile Include="Views\Billings\BillingView.xaml.cs">
+      <DependentUpon>BillingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CashAdvances\CashAdvancesList.xaml.cs">
+      <DependentUpon>CashAdvancesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CashAdvances\CashAdvanceView.xaml.cs">
+      <DependentUpon>CashAdvanceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CashAdvances\CashAdvanceViewModel.cs" />
+    <Compile Include="Views\Assignments\AssignmentsList.xaml.cs">
+      <DependentUpon>AssignmentsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Assignments\AssignmentsPerDetachmentView.xaml.cs">
+      <DependentUpon>AssignmentsPerDetachmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Assignments\AssignmentView.xaml.cs">
+      <DependentUpon>AssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Payrolls\PayrollsList.xaml.cs">
+      <DependentUpon>PayrollsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Payrolls\AttendancesPerDetachmentView.xaml.cs">
+      <DependentUpon>AttendancesPerDetachmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Payrolls\PayrollView.xaml.cs">
+      <DependentUpon>PayrollView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Payrolls\PayrollViewModel.cs" />
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PagibigLoans\PagibigLoanViewModel.cs" />
+    <Compile Include="Views\Utilities\PostCurrentPayrollPeriodView.xaml.cs">
+      <DependentUpon>PostCurrentPayrollPeriodView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilities\ChangePasswordView.xaml.cs">
+      <DependentUpon>ChangePasswordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilities\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Preferences\PreferenceViewModel.cs" />
+    <Compile Include="Views\Preferences\PreferenceView.xaml.cs">
+      <DependentUpon>PreferenceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SssLoans\SssLoansList.xaml.cs">
+      <DependentUpon>SssLoansList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SssLoans\SssLoanView.xaml.cs">
+      <DependentUpon>SssLoanView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SssLoans\SssLoanViewModel.cs" />
+    <Compile Include="Views\PagibigLoans\PagibigLoansList.xaml.cs">
+      <DependentUpon>PagibigLoansList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PagibigLoans\PagibigLoanView.xaml.cs">
+      <DependentUpon>PagibigLoanView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Incentives\IncentiveViewModel.cs" />
+    <Compile Include="Views\SssContributions\SssContributionsList.xaml.cs">
+      <DependentUpon>SssContributionsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SssContributions\SssContributionView.xaml.cs">
+      <DependentUpon>SssContributionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Helpers\SearchModule\SearchItem.cs" />
+    <Compile Include="Views\Helpers\SearchModule\SearchItemViewModel.cs" />
+    <Compile Include="Views\Helpers\SearchModule\SearchWindow.xaml.cs">
+      <DependentUpon>SearchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilities\SwicthDatabaseView.xaml.cs">
+      <DependentUpon>SwicthDatabaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.xaml.cs">
+      <DependentUpon>WithholdingTaxDeductionsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.xaml.cs">
+      <DependentUpon>WithholdingTaxDeductionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixedDeductions\FixedDeductionsViewModel.cs" />
+    <Compile Include="Views\FixedDeductions\FixedDeductionView.xaml.cs">
+      <DependentUpon>FixedDeductionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employees\EmployeesList.xaml.cs">
+      <DependentUpon>EmployeesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employees\EmployeeView.xaml.cs">
+      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employers\EmployersList.xaml.cs">
+      <DependentUpon>EmployersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employers\EmployersViewModel.cs" />
+    <Compile Include="Views\Employers\EmployerView.xaml.cs">
+      <DependentUpon>EmployerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employers\EmployerViewModel.cs" />
+    <Compile Include="Views\Helpers\AddressView.xaml.cs">
+      <DependentUpon>AddressView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Users\UsersList.xaml.cs">
+      <DependentUpon>UsersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Users\UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PayrollPeriods\PayrollPeriodsList.xaml.cs">
+      <DependentUpon>PayrollPeriodsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PayrollPeriods\PayrollPeriodView.xaml.cs">
+      <DependentUpon>PayrollPeriodView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeStatuses\EmployeeStatusesList.xaml.cs">
+      <DependentUpon>EmployeeStatusesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Detachments\DetachmentsList.xaml.cs">
+      <DependentUpon>DetachmentsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Detachments\DetachmentView.xaml.cs">
+      <DependentUpon>DetachmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeStatuses\EmployeeStatusView.xaml.cs">
+      <DependentUpon>EmployeeStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IManageModel.cs" />
+    <Compile Include="Views\ISaveable.cs" />
+    <Compile Include="Views\MessageBoxes.cs" />
+    <Compile Include="Views\AbstractViewModel.cs" />
+    <Compile Include="Views\PhilhealthContributions\PhilhealthContributionsList.xaml.cs">
+      <DependentUpon>PhilhealthContributionsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhilhealthContributions\PhilhealthContributionView.xaml.cs">
+      <DependentUpon>PhilhealthContributionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Incentives\IncentivesList.xaml.cs">
+      <DependentUpon>IncentivesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Incentives\IncentiveView.xaml.cs">
+      <DependentUpon>IncentiveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaxGroups\TaxGroupsList.xaml.cs">
+      <DependentUpon>TaxGroupsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaxGroups\TaxGroupView.xaml.cs">
+      <DependentUpon>TaxGroupView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Themes\ColoursDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Properties\DesignTimeResources.xaml" Condition="'$(DesignTime)'=='true' OR ('$(SolutionPath)'!='' AND Exists('$(SolutionPath)') AND '$(BuildingInsideVisualStudio)'!='true' AND '$(BuildingInsideExpressionBlend)'!='true')">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDesignTimeResources>true</ContainsDesignTimeResources>
+    </Page>
+    <Page Include="Tester.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Attendances\AttendancesPerDetachmentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Attendances\AttendancesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Attendances\AttendanceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Billings\BillingsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\Billings\BillingsList.xaml.cs">
+      <DependentUpon>BillingsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Billings\BillingsViewModel.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Billings\BillingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CashAdvances\CashAdvancesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CashAdvances\CashAdvanceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Assignments\AssignmentsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Assignments\AssignmentsPerDetachmentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Assignments\AssignmentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Payrolls\PayrollsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Payrolls\AttendancesPerDetachmentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Payrolls\PayrollView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilities\PostCurrentPayrollPeriodView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Utilities\ChangePasswordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilities\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Preferences\PreferenceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SssLoans\SssLoansList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SssLoans\SssLoanView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PagibigLoans\PagibigLoansList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PagibigLoans\PagibigLoanView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SssContributions\SssContributionsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SssContributions\SssContributionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Helpers\SearchModule\SearchWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Utilities\SwicthDatabaseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WithholdingTaxDeductions\WithholdingTaxDeductionsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\WithholdingTaxDeductions\WithholdingTaxDeductionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FixedDeductions\FixedDeductionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Employees\EmployeesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Employees\EmployeeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Employers\EmployersList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Employers\EmployerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Helpers\AddressView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Users\UsersList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Users\UserView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PayrollPeriods\PayrollPeriodsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PayrollPeriods\PayrollPeriodView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EmployeeStatuses\EmployeeStatusesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Detachments\DetachmentsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Detachments\DetachmentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EmployeeStatuses\EmployeeStatusView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PhilhealthContributions\PhilhealthContributionsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhilhealthContributions\PhilhealthContributionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Incentives\IncentivesList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Incentives\IncentiveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TaxGroups\TaxGroupsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TaxGroups\TaxGroupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ActionResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseLibrary\DatabaseLibrary.csproj">
+      <Project>{FEE72EC6-0270-478E-9AC6-E34CE06BE3DB}</Project>
+      <Name>DatabaseLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\active_directory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\reviewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\workers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\collaborator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tear_off_calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\unpin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\layers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\watch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\check_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cash_receiving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\gift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pagibig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\philhealth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bank_cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\card_in_use.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\organization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tick_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hotel_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\workers_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\group_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\collaborator_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tear_off_calendar_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\reviewer_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\philhealth_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sss_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bir_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\gift_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cash_receiving_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hearts_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calculator_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pelfusion_long_shadow_media_calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Security_sharepoint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\very_basic_key_icon_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\key_10_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_user_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pelfusion_long_shadow_media_calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user_shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\watch_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\magnifying_glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cashbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\paper_money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\scissors-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+D:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll.config
+D:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll
+D:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.pdb
+D:\Projects\payroll_system\DatabaseLibrary\bin\Debug\mysql.data.dll
+D:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.dll
+D:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll.config
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\bin\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\bin\Debug\mysql.data.dll
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\obj\Debug\DatabaseLibrary.csprojResolveAssemblyReference.cache
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\obj\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system 2014-04-10\DatabaseLibrary\obj\Debug\DatabaseLibrary.pdb
+G:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll.config
+G:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll
+G:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.pdb
+G:\Projects\payroll_system\DatabaseLibrary\bin\Debug\mysql.data.dll
+G:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.csprojResolveAssemblyReference.cache
+G:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.dll
+G:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll.config
+H:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.pdb
+H:\Projects\payroll_system\DatabaseLibrary\bin\Debug\mysql.data.dll
+H:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.csprojResolveAssemblyReference.cache
+H:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.dll
+H:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.pdb
+I:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll.config
+I:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.dll
+I:\Projects\payroll_system\DatabaseLibrary\bin\Debug\DatabaseLibrary.pdb
+I:\Projects\payroll_system\DatabaseLibrary\bin\Debug\mysql.data.dll
+I:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.csprojResolveAssemblyReference.cache
+I:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.dll
+I:\Projects\payroll_system\DatabaseLibrary\obj\Debug\DatabaseLibrary.pdb
